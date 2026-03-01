@@ -57,7 +57,7 @@ export default function Hero() {
                 </div>
                 <div className="relative order-2 w-full">
                     <div className="aspect-video">
-                        <iframe className="w-full h-full" src="https://www.youtube.com/embed/oowBXzfcl90?si=niBlD63s3Cfnx94m&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="w-full h-full max-w-full rounded-lg" src="https://www.youtube.com/embed/oowBXzfcl90?si=niBlD63s3Cfnx94m&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
