@@ -1,9 +1,11 @@
+import { Hash, ArrowRight } from "lucide-react";
+
 export default function Sobre() {
     return ( 
     <section id="sobre" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-                <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                     <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">Como funciona o</span>
                     <br />
                     <span  className="bg-gradient-to-b from-green-400 to-green-600 bg-clip-text text-transparent">Acompanhamento?</span>
@@ -15,12 +17,12 @@ export default function Sobre() {
                     <div className="pb-10 mx-auto text-center rounded">
                         <h2 className="text-white text-3xl font-semibold mb-12">Meu processo tem as seguintes etapas</h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-20">
                             {[
                             { num: "01", title: "Avaliação", desc: "Análise completa do seu estado atual, histórico, objetivos, rotina, hábitos e desafios." },
                             { num: "02", title: "Plano Personalizado", desc: "Criação de um plano individual de nutrição e treino, desenvolvido especificamente para você." },
-                            { num: "03", title: "Implementação & Suporte", desc: "Orientação contínua durante a execução do plano, com acompanhamento próximo." },
-                            { num: "04", title: "Ajuste & Otimização", desc: "Monitoramento dos resultados e ajustes estratégicos no treino e na dieta." },
+                            { num: "03", title: "Orientação", desc: "Orientação contínua durante a execução do plano, com acompanhamento próximo." },
+                            { num: "04", title: "Monitoramento e Ajustes", desc: "Monitoramento dos resultados e ajustes estratégicos no treino e na dieta." },
                             ].map((step) => (
                             <div key={step.num} className="flex flex-col items-center text-center gap-4">
                                 <div className="w-14 h-14 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-lg">
@@ -30,6 +32,36 @@ export default function Sobre() {
                                 <p className="text-slate-400 text-sm">{step.desc}</p>
                             </div>
                             ))}
+                        </div>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
+                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-600 to-green-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+                                <span>QUERO MEU PLANEJAMENTO</span>
+                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="py-16 px-8">
+                    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                        
+                        <div className="w-96 h-96 rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
+                            <span className="text-green-400">foto aqui</span>
+                        </div>
+
+                        <div className="flex flex-col gap-4 text-center md:text-left">
+                            <span className="text-green-400 font-semibold text-sm uppercase tracking-widest">Quem é seu profissional?</span>
+                            <h2 className="text-white text-3xl font-bold">Dyego Augusto
+                                <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 mx-5 mt-3 bg-green-500/10 border border-green-500/20 rounded-full">
+                                    <Hash className="w-4 h-4 text-green-400" />
+                                    <span className="text-xs sm:text-sm text-green-300">CRN 0000000</span>
+                                </div>
+                            </h2>
+                            <p className="text-gray-400 leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p className="text-gray-400 leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
                 </div>
