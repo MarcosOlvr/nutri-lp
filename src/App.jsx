@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Pricing from "./components/Pricing";
+import Preco from "./components/Preco";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Sobre from "./components/Sobre";
@@ -12,7 +12,7 @@ function App() {
     <Navbar />
     <Hero />
     <Sobre />
-    <Pricing />
+    <Preco />
     <Testimonials />
     <Footer />
   </div>
