@@ -4,7 +4,7 @@ export default function Sobre() {
     return ( 
     <section id="sobre" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <div className="text-center mb-6 sm:mb-8 lg:mb-10">
                 <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                     <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">Como funciona o</span>
                     <br />
@@ -15,7 +15,7 @@ export default function Sobre() {
             <div className="space-y-16 sm:space-y-20 lg:space-y-32"> 
                 <div className="flex mb-4">
                     <div className="pb-10 mx-auto text-center rounded">
-                        <h2 className="text-white text-3xl font-semibold mb-12">Meu processo tem as seguintes etapas</h2>
+                        <h2 className="text-white text-2xl md:text-3xl font-semibold mb-12">Meu processo tem as seguintes etapas</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-20">
                             {[
@@ -29,22 +29,24 @@ export default function Sobre() {
                                 {step.num}
                                 </div>
                                 <h3 className="text-white font-bold">{step.title}</h3>
-                                <p className="text-slate-400 text-sm">{step.desc}</p>
+                                <p className="text-gray-400 text-sm">{step.desc}</p>
                             </div>
                             ))}
                         </div>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
-                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-600 to-green-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
-                                <span>QUERO MEU PLANEJAMENTO</span>
-                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
-                            </button>
+                            <a href="#planos">
+                                <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-600 to-green-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+                                    <span>QUERO MEU PLANEJAMENTO</span>
+                                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div className="py-16 px-8">
                     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
                         
-                        <div className="w-96 h-96 rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
+                        <div className="w-80 h-80 sm:w-90 sm:h-90 rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
                             <span className="text-green-400">foto aqui</span>
                         </div>
 
