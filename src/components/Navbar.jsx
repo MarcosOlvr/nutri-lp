@@ -13,16 +13,16 @@ export default function Navbar() {
                         <img src="/logo.png" alt="Dyego - Nutricionista Esportivo" className="w-6 h-6 sm:w-8 sm:h-8"/>
                     </div>
                     <span className="text-lg sm:text-xl md:text-2xl font-medium">
-                        <span className="text-white">Dyego </span>
-                        <span className="text-green-400">Nutricionista</span>
+                        <span className="text-white">Dyego Augusto </span>
+                        <span className="text-emerald-600">Nutricionista</span>
                     </span>
                 </div>
 
                 {/* nav links */}
                 <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#sobre" className="text-gray-300 hover:text-white text-sm lg:text-base">Sobre</a>
-                    <a href="#preco" className="text-gray-300 hover:text-white text-sm lg:text-base">Preço</a>
-                    <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-base">Testimonials</a>
+                    <a href="#sobre" className="text-gray-300 hover:text-white text-sm lg:text-lg">Sobre</a>
+                    <a href="#preco" className="text-gray-300 hover:text-white text-sm lg:text-lg">Preço</a>
+                    <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-lg">Testimonials</a>
                 </div>
 
                 <button className="md:hidden p-2 text-gray-300 hover:text-white" onClick={() => setMobileMenuIsOpen((prev) => !prev)}>

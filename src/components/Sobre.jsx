@@ -1,4 +1,4 @@
-import { Hash, ArrowRight } from "lucide-react";
+import { Hash, ArrowRight, Rocket, Target, Brain, ChartLine, Scale, Paperclip } from "lucide-react";
 
 export default function Sobre() {
     return ( 
@@ -15,25 +15,25 @@ export default function Sobre() {
             <div className="space-y-16 sm:space-y-20 lg:space-y-32"> 
                 <div className="flex mb-4">
                     <div className="pb-10 mx-auto text-center rounded">
-                        <section className="px-8 text-center pb-16 sm:pb-20">
-                            <p className="text-white text-sm sm:text-base uppercase tracking-widest mb-5 sm:mb-7 border-b-2 border-emerald-600">Para quem é?</p>
+                        <div className="px-8 text-center pb-16 sm:pb-24">
+                            <p className="text-white text-sm sm:text-base uppercase tracking-widest mb-5 sm:mb-7 border-b-2 border-emerald-600">E para quem é?</p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                                 {[
-                                { icon: "🎯", desc: "Busca faturar pelo menos R$10k/mês com ética e sem depender de likes." },
-                                { icon: "🚀", desc: "Quer acelerar a sua carreira com um método prático e estratégico, direto ao ponto." },
-                                { icon: "🧠", desc: "É ótimo no que faz, mas não sabe como vender seu serviço para atrair pacientes." },
-                                { icon: "📈", desc: "Prioriza um serviço de alta qualidade e quer um marketing que reflita o seu posicionamento." },
-                                { icon: "⚖️", desc: "Deseja ter mais liberdade e qualidade de vida, sem se tornar escravo do próprio negócio." },
-                                { icon: "🔗", desc: "Cansou de fórmulas mágicas e busca um crescimento real e sustentável para sua carreira." },
+                                { icon: <Target />, desc: "Busca faturar pelo menos R$10k/mês com ética e sem depender de likes." },
+                                { icon: <Rocket />, desc: "Quer acelerar a sua carreira com um método prático e estratégico, direto ao ponto." },
+                                { icon: <Brain />, desc: "É ótimo no que faz, mas não sabe como vender seu serviço para atrair pacientes." },
+                                { icon: <ChartLine />, desc: "Prioriza um serviço de alta qualidade e quer um marketing que reflita o seu posicionamento." },
+                                { icon: <Scale/>, desc: "Deseja ter mais liberdade e qualidade de vida, sem se tornar escravo do próprio negócio." },
+                                { icon: <Paperclip />, desc: "Cansou de fórmulas mágicas e busca um crescimento real e sustentável para sua carreira." },
                                 ].map((item, index) => (
                                 <div key={index} className="flex flex-col items-center gap-4">
-                                    <span className="text-4xl text-green-500">{item.icon}</span>
+                                    <span className="text-4xl text-emerald-600">{item.icon}</span>
                                     <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-xs">{item.desc}</p>
                                 </div>
                                 ))}
                             </div>
-                        </section>
+                        </div>
                         <h2 className="text-white text-2xl md:text-3xl font-semibold mb-12">Meu processo tem as seguintes etapas</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-20">
@@ -53,7 +53,7 @@ export default function Sobre() {
                             ))}
                         </div>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
-                            <a href="#planos">
+                            <a href="#preco">
                                 <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
                                     <span>QUERO MEU PLANEJAMENTO</span>
                                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
@@ -65,7 +65,7 @@ export default function Sobre() {
                 <div className="py-8 sm:py-14 px-8">
                     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
                         
-                        <div className="w-70 h-70 sm:w-90 sm:h-90 rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
+                        <div className="w-70 h-70 sm:w-90 sm:h-90 rounded-full sm:rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
                             <span className="text-green-400">foto aqui</span>
                         </div>
 

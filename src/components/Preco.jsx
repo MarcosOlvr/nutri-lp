@@ -29,7 +29,7 @@ const plans = [
             "Orientação sobre suplementação, quando necessário",
             "Lista de compras organizada para facilitar o dia a dia"
         ], 
-        maisRecomendado: false,
+        maisRecomendado: true,
     },
     {
         name: "Semestral",
@@ -44,7 +44,7 @@ const plans = [
             "Orientação sobre suplementação, quando necessário",
             "Lista de compras organizada para facilitar o dia a dia"
         ], 
-        maisRecomendado: true,
+        maisRecomendado: false,
     },
 ]
 export default function Preco() {
@@ -60,7 +60,7 @@ export default function Preco() {
                     <p className="text-gray-400 text-base text-xl sm:text-lg max-w-2xl mx-auto">Escolha o plano perfeito para sua necessidade.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6" id="planos">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
                     {plans.map((plan, key) => (
                         <div key={key} className={`relative bg-slate-900/50 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${
                             plan.maisRecomendado 
