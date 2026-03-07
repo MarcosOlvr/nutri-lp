@@ -36,7 +36,7 @@ export default function Hero() {
                         <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
                             Inserir algum texto
                         </span>
-                        <span className="bg-gradient-to-b from-green-400 via-green-600 to-green-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
+                        <span className="bg-gradient-to-b from-green-300 via-emerald-600 to-green-300 bg-clip-text text-transparent block mb-1 sm:mb-2">
                             Que faz sentido
                         </span>
                         <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
@@ -50,7 +50,7 @@ export default function Hero() {
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-from-bottom duration-700 delay-300">
                         <a href="#planos">
-                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-600 to-green-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+                            <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
                                 <span>QUERO MEU PLANO</span>
                                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
                             </button>
