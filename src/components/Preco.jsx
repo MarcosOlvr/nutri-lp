@@ -49,7 +49,7 @@ const plans = [
 ]
 export default function Preco() {
     return ( 
-        <section id="preco" className="pb-10 px-10 sm:px-6 lg:px-8 relative">
+        <section id="planos" className="pb-10 px-10 sm:px-6 lg:px-8 relative">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">

@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Sobre from "./components/Sobre";
 import Preco from "./components/Preco";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/Faq";
 import Footer from "./components/Footer";
-import Sobre from "./components/Sobre";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Sobre />
     <Preco />
     <Testimonials />
+    <FAQ />
     <Footer />
   </div>
   );

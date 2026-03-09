@@ -21,8 +21,9 @@ export default function Navbar() {
                 {/* nav links */}
                 <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="#sobre" className="text-gray-300 hover:text-white text-sm lg:text-lg">Sobre</a>
-                    <a href="#preco" className="text-gray-300 hover:text-white text-sm lg:text-lg">Preço</a>
-                    <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-lg">Testimonials</a>
+                    <a href="#planos" className="text-gray-300 hover:text-white text-sm lg:text-lg">Planos</a>
+                    <a href="#testimonials" className="text-gray-300 hover:text-white text-sm lg:text-lg">Depoimentos</a>
+                    <a href="#FAQ" className="text-gray-300 hover:text-white text-sm lg:text-lg">FAQ</a>
                 </div>
 
                 <button className="md:hidden p-2 text-gray-300 hover:text-white" onClick={() => setMobileMenuIsOpen((prev) => !prev)}>
@@ -38,8 +39,9 @@ export default function Navbar() {
             <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top duration-300">
                 <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
                     <a href="#sobre" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">Sobre</a>
-                    <a href="#preco" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">Preço</a>
-                    <a href="#testimonials" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">Testimonials</a>
+                    <a href="#planos" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">Planos</a>
+                    <a href="#testimonials" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">Depoimentos</a>
+                    <a href="#FAQ" onClick={() => setMobileMenuIsOpen(false)} className="block text-gray-300 hover:text-white text-sm lg:text-base">FAQ</a>
                 </div>
             </div>
         )}
