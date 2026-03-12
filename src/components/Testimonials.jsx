@@ -16,9 +16,9 @@ export default function Depoimentos() {
   useEffect(() => {
   const intervalo = setInterval(() => {
     setAtual((prev) => (prev === depoimentos.length - 1 ? 0 : prev + 1));
-  }, 5000); // troca a cada 3 segundos
+  }, 5000); // troca a cada 5 segundos
 
-  return () => clearInterval(intervalo); // limpa ao desmontar
+  return () => clearInterval(intervalo);
 }, []);
 
   return (

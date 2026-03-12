@@ -34,31 +34,50 @@ export default function Sobre() {
                                 ))}
                             </div>
                         </div>
-                        <h2 className="text-white text-2xl md:text-3xl font-semibold mb-12">Meu processo tem as seguintes etapas</h2>
+                        <div className="max-w-5xl mx-auto text-center">
 
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-20">
+                            <p className="text-emerald-400 text-sm uppercase tracking-widest mb-2">Etapas do acompanhamento</p>
+                            <h2 className="text-white text-3xl md:text-4xl font-bold mb-16">
+                                Meu processo tem os seguintes passos
+                            </h2>
+
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
                             {[
-                            { num: "01", title: "Avaliação", desc: "Análise completa do seu estado atual, histórico, objetivos, rotina, hábitos e desafios." },
-                            { num: "02", title: "Plano Personalizado", desc: "Criação de um plano individual de nutrição e treino, desenvolvido especificamente para você." },
-                            { num: "03", title: "Orientação", desc: "Orientação contínua durante a execução do plano, com acompanhamento próximo." },
-                            { num: "04", title: "Monitoramento e Ajustes", desc: "Monitoramento dos resultados e ajustes estratégicos no treino e na dieta." },
-                            ].map((step) => (
-                            <div key={step.num} className="flex flex-col items-center text-center gap-4">
-                                <div className="w-14 h-14 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-xl">
-                                {step.num}
+                                { num: "01", title: "Avaliação", desc: "Análise completa do seu estado atual, histórico, objetivos, rotina, hábitos e desafios." },
+                                { num: "02", title: "Plano Personalizado", desc: "Criação de um plano individual de nutrição e treino, desenvolvido especificamente para você." },
+                                { num: "03", title: "Orientação", desc: "Orientação contínua durante a execução do plano, com acompanhamento próximo." },
+                                { num: "04", title: "Monitoramento e Ajustes", desc: "Monitoramento dos resultados e ajustes estratégicos no treino e na dieta." },
+                            ].map((step, index, arr) => (
+                                <div key={step.num} className="relative flex flex-col items-center text-center">
+
+                                {/* Linha conectora */}
+                                {index < arr.length - 1 && (
+                                    <div className="hidden md:block absolute top-6 left-[60%] w-full h-px bg-gradient-to-r from-green-300 to-emerald-800 z-0" />
+                                )}
+
+                                {/* Número */}
+                                    <div className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-emerald-900 mb-5">
+                                        {step.num}
+                                    </div>
+
+                                {/* Card */}
+                                    <div className="bg-slate-900 border border-slate-700 hover:border-emerald-500 transition-colors rounded-2xl p-6 flex flex-col gap-3 h-full">
+                                        <h3 className="text-white font-bold text-base border-b border-emerald-600 pb-2">{step.title}</h3>
+                                        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{step.desc}</p>
+                                    </div>
+
                                 </div>
-                                <h3 className="text-white font-bold text-base sm:text-lg border-b-2 border-emerald-600">{step.title}</h3>
-                                <p className="text-gray-400 text-sm sm:text-base">{step.desc}</p>
-                            </div>
                             ))}
-                        </div>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
-                            <a href="#planos">
-                                <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
-                                    <span>QUERO MEU PLANEJAMENTO</span>
-                                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
-                                </button>
-                            </a>
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-from-bottom duration-700 delay-300">
+                                <a href="#planos">
+                                    <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
+                                        <span>QUERO MEU PLANEJAMENTO</span>
+                                        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -70,7 +89,7 @@ export default function Sobre() {
                         </div>
 
                         <div className="flex flex-col gap-4 text-center md:text-left">
-                            <span className="text-green-400 font-semibold text-sm uppercase tracking-widest">Quem é seu profissional?</span>
+                            <span className="text-emerald-500 font-semibold text-sm uppercase tracking-widest">Quem é seu profissional?</span>
                             <h2 className="text-white text-3xl font-bold">Dyego Augusto
                                 <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 mx-5 mt-5 sm:mt-0 bg-green-500/10 border border-green-500/20 rounded-full">
                                     <Hash className="w-4 h-4 text-green-400" />

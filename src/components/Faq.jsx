@@ -12,24 +12,24 @@ export default function FAQ() {
   const [open, setOpen] = useState(null);
 
   return (
-    <section id="FAQ" className="py-16 px-6">
+    <section id="FAQ" className="py-16 px-6 bg-white/90 text-black">
       <div className="max-w-3xl mx-auto">
-        <p className="text-emerald-600 text-sm uppercase tracking-widest text-center mb-2">FAQ</p>
-        <h2 className="text-white text-3xl font-bold text-center mb-10">Perguntas Frequentes</h2>
+        <p className="text-emerald-700 text-sm uppercase tracking-widest text-center mb-2">FAQ</p>
+        <h2 className="text-3xl font-bold text-center mb-10">Perguntas Frequentes</h2>
 
         <div className="flex flex-col gap-3">
           {faqs.map((faq, index) => (
             <div key={index} className="border border-slate-700 rounded-xl overflow-hidden">
               <button
                 onClick={() => setOpen(open === index ? null : index)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left text-white font-medium hover:bg-slate-800 transition-colors"
+                className="w-full flex justify-between items-center px-6 py-4 text-left text-black font-medium hover:bg-emerald-800/10 transition-colors"
               >
                 <span className="text-base sm:text-lg">{faq.question}</span>
-                <span className="text-emerald-600 text-xl ml-4">{open === index ? "−" : "+"}</span>
+                <span className="text-emerald-700 text-xl ml-4">{open === index ? "−" : "+"}</span>
               </button>
 
               {open === index && (
-                <div className="px-6 py-4 text-gray-400 text-sm sm:text-base leading-relaxed border-t border-slate-700">
+                <div className="px-6 py-4 text-black text-sm sm:text-base leading-relaxed border-t border-slate-700">
                   {faq.answer}
                 </div>
               )}
