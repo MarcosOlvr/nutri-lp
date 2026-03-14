@@ -1,40 +1,75 @@
 import { useState } from "react";
 
 const faqs = [
-  { question: "Como funciona o atendimento?", answer: "O atendimento pode ser presencial ou online, de acordo com sua preferência. Após o agendamento, realizamos uma avaliação completa para montar seu plano personalizado." },
-  { question: "Quanto tempo dura a consulta?", answer: "A primeira consulta dura aproximadamente 1 hora. As consultas de retorno têm duração média de 30 a 45 minutos." },
-  { question: "Com que frequência devo fazer retorno?", answer: "O retorno é recomendado a cada 30 dias para acompanhar sua evolução e ajustar o plano conforme necessário." },
-  { question: "O plano alimentar é personalizado?", answer: "Sim! O plano é 100% individualizado, levando em conta seus objetivos, rotina, preferências alimentares e histórico de saúde." },
-  { question: "Como faço para agendar uma consulta?", answer: "Você pode agendar pelo WhatsApp ou pelas redes sociais. Entre em contato e responderemos o mais rápido possível." },
+  { question: "Atende por convênio médico ou plano de saúde?", answer: "Não! Porém, posso te fornecer todos os documentos necessários para que você peça reembolso do acompanhamento junto ao seu plano de saúde!" },
+  { question: "Quanto tempo dura a consulta e os retornos?", answer: "A primeira consulta dura aproximadamente 1 hora. Os retornos têm duração média de 30 a 45 minutos." },
+  { question: "O que é feito no retorno?", answer: "No retorno avaliamos sua evolução, ajustamos o plano alimentar conforme necessário e tiramos todas as suas dúvidas." },
+  { question: "Como funciona o acompanhamento online?", answer: "O acompanhamento online é feito por videochamada, com a mesma qualidade do atendimento presencial." },
+  { question: "Quais são as avaliações feitas na consulta presencial?", answer: "Na consulta presencial realizamos avaliação antropométrica, análise de composição corporal e anamnese completa." },
+  { question: "Quais são as avaliações na consulta online?", answer: "Na consulta online realizamos anamnese detalhada, análise de exames e elaboração do plano alimentar personalizado." },
+  { question: "O atendimento é presencial?", answer: "Sim! Atendo de forma presencial e online, você escolhe o formato que melhor se adapta à sua rotina." },
 ];
 
 export default function FAQ() {
   const [open, setOpen] = useState(null);
 
   return (
-    <section id="FAQ" className="py-16 px-6 bg-white/90 text-black">
-      <div className="max-w-3xl mx-auto">
-        <p className="text-emerald-700 text-sm uppercase tracking-widest text-center mb-2">FAQ</p>
-        <h2 className="text-3xl font-bold text-center mb-10">Perguntas Frequentes</h2>
+    <section className="py-20 px-6">
+      <div className="max-w-6xl mx-auto">
 
-        <div className="flex flex-col gap-3">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border border-slate-700 rounded-xl overflow-hidden">
-              <button
-                onClick={() => setOpen(open === index ? null : index)}
-                className="w-full flex justify-between items-center px-6 py-4 text-left text-black font-medium hover:bg-emerald-800/10 transition-colors"
-              >
-                <span className="text-base sm:text-lg">{faq.question}</span>
-                <span className="text-emerald-700 text-xl ml-4">{open === index ? "−" : "+"}</span>
-              </button>
+        <h2 className="text-white text-4xl font-bold mb-12 text-center sm:text-start">
+          Perguntas <span className="text-emerald-500">frequentes</span>
+        </h2>
 
-              {open === index && (
-                <div className="px-6 py-4 text-black text-sm sm:text-base leading-relaxed border-t border-slate-700">
-                  {faq.answer}
-                </div>
-              )}
+        <div className="flex flex-col md:flex-row gap-10">
+
+          {/* Accordion */}
+          <div className="flex flex-col gap-3 flex-1">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border border-slate-700 rounded-xl overflow-hidden">
+                <button
+                  onClick={() => setOpen(open === index ? null : index)}
+                  className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-colors ${open === index ? "text-emerald-500" : "text-white"} hover:bg-slate-800`}
+                >
+                  <span>{faq.question}</span>
+                  <span className="text-xl ml-4">{open === index ? "▲" : "▼"}</span>
+                </button>
+
+                {open === index && (
+                  <div className="px-6 py-4 text-gray-400 text-sm leading-relaxed border-t border-slate-700">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Lado direito */}
+          <div className="md:w-80 flex flex-col gap-6 text-center md:text-start">
+            <div>
+              <h3 className="text-white text-3xl font-bold leading-tight">Ficou com alguma dúvida?</h3>
+              <p className="text-gray-400 text-sm mt-3">
+                Confira as respostas para as perguntas frequentes ou entre em contato comigo:
+              </p>
             </div>
-          ))}
+
+            
+              <a href="https://wa.me/00000000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl p-5 transition-colors"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="text-emerald-500 w-10 h-10 flex-shrink-0">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.827L.057 23.428a.75.75 0 00.915.915l5.601-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.523-5.184-1.433l-.372-.22-3.862 1.013 1.013-3.696-.242-.383A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              <div className="text-start">
+                <p className="text-white font-bold text-sm uppercase tracking-wide">Atendimento por WhatsApp</p>
+                <p className="text-slate-400 text-sm">Toque aqui para tirar suas dúvidas</p>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Sobre from "./components/Sobre";
 import Preco from "./components/Preco";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/Faq";
+import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Preco />
     <Testimonials />
     <FAQ />
+    <Cta/>
     <Footer />
   </div>
   );
