@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/Faq";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
+import Profissional from "./components/Profissional";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
     <Navbar />
     <Hero />
     <Sobre />
-    <Preco />
+    <Profissional />
     <Testimonials />
+    <Preco />
     <FAQ />
     <Cta/>
     <Footer />

@@ -7,7 +7,6 @@ const faqs = [
   { question: "Como funciona o acompanhamento online?", answer: "O acompanhamento online é feito por videochamada, com a mesma qualidade do atendimento presencial." },
   { question: "Quais são as avaliações feitas na consulta presencial?", answer: "Na consulta presencial realizamos avaliação antropométrica, análise de composição corporal e anamnese completa." },
   { question: "Quais são as avaliações na consulta online?", answer: "Na consulta online realizamos anamnese detalhada, análise de exames e elaboração do plano alimentar personalizado." },
-  { question: "O atendimento é presencial?", answer: "Sim! Atendo de forma presencial e online, você escolhe o formato que melhor se adapta à sua rotina." },
 ];
 
 export default function FAQ() {

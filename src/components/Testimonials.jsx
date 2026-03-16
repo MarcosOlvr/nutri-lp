@@ -6,6 +6,7 @@ const depoimentos = [
   "/depoimentos/depoimento2.jpeg",
   "/depoimentos/depoimento3.jpeg",
   "/depoimentos/depoimento4.jpeg",
+  "/depoimentos/depoimento5.jpeg",
 ];
 
 export default function Depoimentos() {
@@ -16,12 +17,12 @@ export default function Depoimentos() {
   const getIndex = (offset) => (atual + offset + depoimentos.length) % depoimentos.length;
 
   useEffect(() => {
-    const intervalo = setInterval(proximo, 5000);
+    const intervalo = setInterval(proximo, 7000);
     return () => clearInterval(intervalo);
   }, [atual]);
 
   return (
-    <section id="testimonials" className="py-16 px-6">
+    <section id="testimonials" className="py-10 px-6">
       <div className="max-w-5xl mx-auto text-center">
 
         <div className="text-center mb-10">
@@ -34,7 +35,7 @@ export default function Depoimentos() {
         <div className="flex items-center justify-center gap-4">
 
           {/* Imagem anterior - apenas desktop */}
-          <div className="hidden md:block w-44 flex-shrink-0 opacity-40 cursor-pointer hover:opacity-60 transition-opacity" onClick={anterior}>
+          <div className="hidden md:block w-54 flex-shrink-0 opacity-40 cursor-pointer hover:opacity-60 transition-opacity" onClick={anterior}>
             <img
               src={depoimentos[getIndex(-1)]}
               alt="anterior"
@@ -58,7 +59,7 @@ export default function Depoimentos() {
           </div>
 
           {/* Imagem próxima - apenas desktop */}
-          <div className="hidden md:block w-44 flex-shrink-0 opacity-40 cursor-pointer hover:opacity-60 transition-opacity" onClick={proximo}>
+          <div className="hidden md:block w-54 flex-shrink-0 opacity-40 cursor-pointer hover:opacity-60 transition-opacity" onClick={proximo}>
             <img
               src={depoimentos[getIndex(1)]}
               alt="próxima"

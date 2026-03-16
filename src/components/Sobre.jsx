@@ -2,13 +2,13 @@ import { Hash, ArrowRight, Rocket, Target, Brain, ChartLine, Scale, Paperclip } 
 
 export default function Sobre() {
     return ( 
-    <section id="sobre" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative">
+    <section id="sobre" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-white/85">
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-6 sm:mb-8 lg:mb-10">
                 <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                    <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">Como funciona o</span>
+                    <span className="bg-gradient-to-b from-black to-gray-700 bg-clip-text text-transparent">Como funciona o</span>
                     <br />
-                    <span  className="bg-gradient-to-b from-green-400 to-emerald-600 bg-clip-text text-transparent">Acompanhamento?</span>
+                    <span  className="bg-gradient-to-b from-emerald-400 to-emerald-800 bg-clip-text text-transparent">Acompanhamento?</span>
                 </h2>
             </div>
 
@@ -16,7 +16,7 @@ export default function Sobre() {
                 <div className="flex mb-4">
                     <div className="pb-10 mx-auto text-center rounded">
                         <div className="px-8 text-center pb-16 sm:pb-24">
-                            <p className="text-white text-sm sm:text-base uppercase tracking-widest mb-5 sm:mb-7 border-b-2 border-emerald-600">E para quem é?</p>
+                            <p className="text-black text-sm sm:text-base uppercase tracking-widest mb-5 sm:mb-7 border-b-2 border-emerald-600">E para quem é?</p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                                 {[
@@ -28,16 +28,16 @@ export default function Sobre() {
                                 { icon: <Paperclip />, desc: "Cansou de fórmulas mágicas e busca um crescimento real e sustentável para sua carreira." },
                                 ].map((item, index) => (
                                 <div key={index} className="flex flex-col items-center gap-4">
-                                    <span className="text-4xl text-emerald-600">{item.icon}</span>
-                                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-xs">{item.desc}</p>
+                                    <span className="text-4xl text-emerald-700">{item.icon}</span>
+                                    <p className="text-black/80 text-sm sm:text-base leading-relaxed max-w-xs">{item.desc}</p>
                                 </div>
                                 ))}
                             </div>
                         </div>
                         <div className="max-w-5xl mx-auto text-center">
 
-                            <p className="text-emerald-400 text-sm uppercase tracking-widest mb-2">Etapas do acompanhamento</p>
-                            <h2 className="text-white text-3xl md:text-4xl font-bold mb-16">
+                            <p className="text-emerald-700 text-sm uppercase tracking-widest mb-2">Etapas do acompanhamento</p>
+                            <h2 className="text-black text-3xl md:text-4xl font-bold mb-16">
                                 Meu processo tem os seguintes passos
                             </h2>
 
@@ -61,9 +61,9 @@ export default function Sobre() {
                                     </div>
 
                                 {/* Card */}
-                                    <div className="bg-slate-900 border border-slate-700 hover:border-emerald-500 transition-colors rounded-2xl p-6 flex flex-col gap-3 h-full">
-                                        <h3 className="text-white font-bold text-base border-b border-emerald-600 pb-2">{step.title}</h3>
-                                        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">{step.desc}</p>
+                                    <div className="bg-emerald-900 border border-slate-700 hover:border-emerald-500 transition-colors rounded-2xl p-6 flex flex-col gap-3 h-full">
+                                        <h3 className="text-white font-bold text-base border-b border-green-400 pb-2">{step.title}</h3>
+                                        <p className="text-white/90 text-sm sm:text-base leading-relaxed">{step.desc}</p>
                                     </div>
 
                                 </div>
@@ -78,30 +78,6 @@ export default function Sobre() {
                                     </button>
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="py-8 sm:py-14 px-8">
-                    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-                        
-                        <div className="w-70 h-70 sm:w-90 sm:h-90 rounded-full sm:rounded-2xl bg-slate-700 flex-shrink-0 flex items-center justify-center">
-                            <span className="text-green-400">foto aqui</span>
-                        </div>
-
-                        <div className="flex flex-col gap-4 text-center md:text-left">
-                            <span className="text-emerald-500 font-semibold text-sm uppercase tracking-widest">Quem é seu profissional?</span>
-                            <h2 className="text-white text-3xl font-bold">Dyego Augusto
-                                <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 mx-5 mt-5 sm:mt-0 bg-green-500/10 border border-green-500/20 rounded-full">
-                                    <Hash className="w-4 h-4 text-green-400" />
-                                    <span className="text-xs sm:text-sm text-green-300">CRN 0000000</span>
-                                </div>
-                            </h2>
-                            <p className="text-gray-400 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                            <p className="text-gray-400 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
                         </div>
                     </div>
                 </div>
