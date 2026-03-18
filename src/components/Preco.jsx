@@ -62,7 +62,7 @@ export default function Preco() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
                     {plans.map((plan, key) => (
-                        <div key={key} className={`relative bg-emerald-950 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${
+                        <div key={key} className={`relative bg-slate-950 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${
                             plan.maisRecomendado 
                             ? "border-emerald-500 shadow-2xl shadow-green-500/20 lg:scale-105" 
                             : "border-black-300 hover:border-slate-700"
