@@ -7,6 +7,7 @@ const depoimentos = [
   "/depoimentos/depoimento3.jpeg",
   "/depoimentos/depoimento4.jpeg",
   "/depoimentos/depoimento5.jpeg",
+  "/depoimentos/depoimento6.jpeg",
 ];
 
 export default function Depoimentos() {
@@ -22,12 +23,12 @@ export default function Depoimentos() {
   }, [atual]);
 
   return (
-    <section id="testimonials" className="py-10 px-6">
+    <section id="testimonials" className="py-10 px-6 bg-white/85">
       <div className="max-w-5xl mx-auto text-center">
 
         <div className="text-center mb-10">
           <p className="text-emerald-600 text-sm uppercase tracking-widest mb-2">Com dúvidas?</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
             O que meus pacientes falam sobre mim?
           </h2>
         </div>
@@ -49,12 +50,12 @@ export default function Depoimentos() {
           </button>
 
           {/* Imagem atual */}
-          <div className="flex-1 rounded-2xl p-4 shadow-lg h-[400px] flex items-center justify-center">
+          <div className="flex-1 p-4 h-[400px] flex items-center justify-center rounded-2xl">
             <img
               key={atual}
               src={depoimentos[atual]}
               alt={`Depoimento ${atual + 1}`}
-              className="w-full h-full object-contain rounded-xl animate-fadeIn"
+              className="w-full object-contain rounded-2xl animate-fadeIn"
             />
           </div>
 
@@ -76,16 +77,16 @@ export default function Depoimentos() {
 
         {/* Dots + botões desktop */}
         <div className="flex items-center justify-center gap-6 mt-8">
-          <button onClick={anterior} className="hidden md:flex w-10 h-10 rounded-full border border-slate-600 text-white hover:bg-slate-700 transition-colors justify-center items-center">
-            <ChevronLeft />
+          <button onClick={anterior} className="hidden md:flex w-10 h-10 rounded-full border border-emerald-600 text-white hover:bg-emerald-100 transition-colors justify-center items-center">
+            <ChevronLeft className="text-emerald-600"/>
           </button>
           <div className="flex gap-2">
             {depoimentos.map((_, i) => (
               <button key={i} onClick={() => setAtual(i)} className={`w-2 h-2 rounded-full transition-colors ${i === atual ? "bg-emerald-600" : "bg-slate-600"}`} />
             ))}
           </div>
-          <button onClick={proximo} className="hidden md:flex w-10 h-10 rounded-full border border-slate-600 text-white hover:bg-slate-700 transition-colors justify-center items-center">
-            <ChevronRight />
+          <button onClick={proximo} className="hidden md:flex w-10 h-10 rounded-full border border-emerald-600 text-white hover:bg-emerald-100 transition-colors justify-center items-center">
+            <ChevronRight className="text-emerald-600"/>
           </button>
         </div>
 
