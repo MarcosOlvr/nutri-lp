@@ -21,15 +21,21 @@ export default function Cta() {
             {/* Conteúdo */}
             <div className="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center gap-6">
                 <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
-                Aqui buscamos resultados <br /> sólidos e consistentes!
+                Se você quer parar de errar na dieta <br/> o próximo passo é esse
                 </h2>
                 <p className="text-white/80 text-sm md:text-base">
-                Venha para o <span className="font-bold text-white">#SEUNOME</span> e esqueça qualquer dieta que já tenha feito antes.
+                    Você pode continuar tentando sozinho, ajustando uma coisa ou outra…
+                </p>
+                <p className="text-white/80 text-sm md:text-base">
+                    Ou pode ter alguém te acompanhando, ajustando sua estratégia e acelerando sua evolução
+                </p>
+                <p className="text-white/80 text-sm md:text-base">
+                    A diferença entre quem evolui e quem fica no mesmo lugar não é esforço - <strong>É direção</strong>
                 </p>
                 <div className="items-center justify-center gap-3 sm:gap-4 pt-3 animate-in slide-from-bottom duration-700 delay-300">
                     <a href="#planos">
                         <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-green-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
-                            <span>QUERO ESCOLHER MEU PLANO</span>
+                            <span>QUERO FAZER PARTE DO TEAM DYEGO</span>
                             <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
                         </button>
                     </a>

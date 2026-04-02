@@ -10,7 +10,7 @@ import Profissional from "./components/Profissional";
 
 function App() {
   return (
-  <div className="min-h-screen bg-emerald-950 text-white overflow-hidden">
+  <div className="min-h-screen bg-gradient-to-b from-emerald-950 via-emerald-800 to-emerald-950 text-white overflow-hidden">
 
     <Navbar />
     <Hero />

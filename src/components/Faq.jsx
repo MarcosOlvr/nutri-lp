@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 const faqs = [
-  { question: "Atende por convênio médico ou plano de saúde?", answer: "Não! Porém, posso te fornecer todos os documentos necessários para que você peça reembolso do acompanhamento junto ao seu plano de saúde!" },
-  { question: "Quanto tempo dura a consulta e os retornos?", answer: "A primeira consulta dura aproximadamente 1 hora. Os retornos têm duração média de 30 a 45 minutos." },
-  { question: "O que é feito no retorno?", answer: "No retorno avaliamos sua evolução, ajustamos o plano alimentar conforme necessário e tiramos todas as suas dúvidas." },
-  { question: "Como funciona o acompanhamento online?", answer: "O acompanhamento online é feito por videochamada, com a mesma qualidade do atendimento presencial." },
-  { question: "Quais são as avaliações feitas na consulta presencial?", answer: "Na consulta presencial realizamos avaliação antropométrica, análise de composição corporal e anamnese completa." },
-  { question: "Quais são as avaliações na consulta online?", answer: "Na consulta online realizamos anamnese detalhada, análise de exames e elaboração do plano alimentar personalizado." },
+  { question: "Funciona online mesmo?", answer: " Sim. Hoje, o acompanhamento online permite mais contato e ajustes do que o modelo tradicional." },
+  { question: "Vou receber uma dieta muito restritiva?", answer: "Não. A ideia é criar algo que você consiga seguir no dia a dia." },
+  { question: "E se eu não conseguir seguir a dieta?", answer: "É exatamente por isso que existe o acompanhamento. A gente ajusta, adapta e encontra o que funciona pra você." },
+  { question: "Em quanto tempo vejo resultado?", answer: "Depende do seu ponto de partida e consistência. Mas com estratégia certa, você começa a ver evolução nas primeiras semanas." },
+  { question: "Preciso treinar?", answer: "Se seu objetivo envolve estética ou performance, sim. Mas tudo é ajustado à sua realidade." },
 ];
 
 export default function FAQ() {

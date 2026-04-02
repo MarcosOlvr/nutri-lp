@@ -14,7 +14,7 @@ export default function Hero() {
         return () => window.removeEventListener("mousemove", handleMouseMove);
     }, []);
     return ( 
-    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden  bg-gradient-to-b from-emerald-900 to-black">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-emerald-900 to-black">
         <div className="absolute inset-0 opacity-30" style={
             {
                 background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`
@@ -48,12 +48,11 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-md sm:text-base lg:text-lg text-white max-w-2xl mx-auto lg:mx-0 mb-3 sm:mb-5 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
-                        Se você pratica musculação, mas sente que sua alimentação não acompanha seus resultados,
-                        eu te ajudo a transformar seu físico com estratégia, sem dietas extremas e sem achismo.
+                        Construa o físico dos seus sonhos seguindo uma dieta básica e bem feita com acompanhamento constante
                     </p>
 
                     <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-5">
-                        {["Emagrecimento", "Hipertrofia", "Performance"].map((badge) => (
+                        {["Emagrecimento", "Ganho de massa muscular", "Performance"].map((badge) => (
                             <span key={badge} className="px-4 py-1.5 border border-emerald-600 text-white text-sm font-medium rounded-full">
                             {badge}
                             </span>
@@ -63,7 +62,7 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-from-bottom duration-700 delay-300">
                         <a href="#planos">
                             <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-emerald-400 to-emerald-600 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
-                                <span>QUERO MEU PLANO</span>
+                                <span>FAÇA PARTE DO TEAM DYEGO</span>
                                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
                             </button>
                         </a>

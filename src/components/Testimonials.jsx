@@ -28,9 +28,10 @@ export default function Depoimentos() {
 
         <div className="text-center mb-10">
           <p className="text-emerald-600 text-sm uppercase tracking-widest mb-2">Com dúvidas?</p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
-            O que meus pacientes falam sobre mim?
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">
+            O que acontece quando você para de tentar sozinho
           </h2>
+          <p className="text-black">Resultados reais de quem começou a seguir uma estratégia com acompanhamento</p>
         </div>
 
         <div className="flex items-center justify-center gap-4">

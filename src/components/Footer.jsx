@@ -3,7 +3,7 @@ import { FaEnvelope, FaInstagram } from "react-icons/fa";
 export default function Footer() {
     return (
     <section>
-        <footer className="p-8 border-t border-slate-700">
+        <footer className="p-8">
             <div className="flex flex-col items-center gap-4 md:hidden">
                 <div className="flex gap-4">
                     <FaInstagram className="text-slate-400 hover:text-white w-5 h-5 cursor-pointer" />

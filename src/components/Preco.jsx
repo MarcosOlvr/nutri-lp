@@ -2,47 +2,49 @@ import { Check, Star } from "lucide-react";
 
 const plans = [
     {
-        name: "Mensal",
+        name: "Mensal - Início da Organização ",
         price: "199,99", 
         pricePerMonth: "",
-        desc: "Acompanhamento mensal feito para organizar coisas e tal e tal e tal",
+        desc: "Para quem quer parar de tentar sozinho e começar com direção. Aqui você começa a organizar sua alimentação e identificar o que está te travando.",
         features: [
-            "Plano alimentar personalizado",
-            "Acompanhamento nutricional", 
-            "Cálculo de macronutrientes ajustados ao seu objetivo",
-            "Sugestões de receitas práticas",
-            "Orientação sobre suplementação, quando necessário",
-            "Lista de compras organizada para facilitar o dia a dia"
+            "Consulta completa para entender sua rotina, treino e objetivo",
+            "Plano alimentar 100% personalizado e adaptado ao seu dia a dia", 
+            "Acompanhamento semanal com análise da sua evolução",
+            "Feedbacks com orientações práticas e ajustes iniciais",
+            "Monitoramento de peso, adesão e dificuldades",
+            "Suporte direto via WhatsApp"
         ], 
         maisRecomendado: false,
     },
     {
-        name: "Trimestral",
+        name: "Trimestral - Evolução Consistente",
         price: "540", 
         pricePerMonth: "R$180",
-        desc: "Acompanhamento trimestral feito para organizar coisas e tal e tal e tal, por um valor completo de R$540 a cada 3 meses, ou seja, R$180 por mês",
+        desc: "Para quem quer sair da estagnação e ter resultado de verdade. Aqui você deixa de “testar dieta” e começa a seguir uma estratégia de fato.",
         features: [
-            "Plano alimentar personalizado",
-            "Acompanhamento nutricional", 
-            "Cálculo de macronutrientes ajustados ao seu objetivo",
-            "Sugestões de receitas práticas",
-            "Orientação sobre suplementação, quando necessário",
-            "Lista de compras organizada para facilitar o dia a dia"
+            "Consulta inicial completa e avaliação profunda",
+            "Plano alimentar personalizado e ajustado à sua realidade", 
+            "Acompanhamento semanal com feedbacks estratégicos",
+            "Ajustes constantes conforme seu corpo responde",
+            "Reavaliação na 6ª semana para corrigir rota e acelerar resultado",
+            "Monitoramento contínuo da evolução e dificuldades",
+            "Suporte direto via WhatsApp durante todo o processo"
         ], 
         maisRecomendado: true,
     },
     {
-        name: "Semestral",
+        name: "Semestral - Transformação Real",
         price: "960", 
         pricePerMonth: "R$160",
-        desc: "Acompanhamento mensal feito para organizar coisas e tal e tal e tal, por um valor completo de R$960 a cada 6 meses, ou seja, R$160 por mês",
+        desc: "Para quem quer mudar o físico e consolidar resultado. Aqui o foco não é só evoluir - é transformar e manter. Mais tempo = resultado mais sólido.",
         features: [
-            "Plano alimentar personalizado",
-            "Acompanhamento nutricional", 
-            "Cálculo de macronutrientes ajustados ao seu objetivo",
-            "Sugestões de receitas práticas",
-            "Orientação sobre suplementação, quando necessário",
-            "Lista de compras organizada para facilitar o dia a dia"
+            "Consulta inicial completa e avaliação detalhada",
+            "Plano alimentar totalmente personalizado", 
+            "Acompanhamento semanal com ajustes contínuos",
+            "Reavaliações estratégicas ao longo do processo",
+            "Adaptação da dieta conforme evolução e fases do corpo",
+            "Construção de hábitos sustentáveis",
+            "Suporte direto via WhatsApp durante todo o acompanhamento"
         ], 
         maisRecomendado: false,
     },
@@ -53,11 +55,11 @@ export default function Preco() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                        <span className="bg-gradient-to-b from-gray-700 to-black bg-clip-text text-transparent">Preços que cabem</span>
+                        <span className="bg-gradient-to-b from-gray-700 to-black bg-clip-text text-transparent">Escolha como você quer</span>
                         <br />
-                        <span  className="bg-gradient-to-b from-emerald-400 to-emerald-800 bg-clip-text text-transparent">no seu bolso</span>
+                        <span  className="bg-gradient-to-b from-emerald-400 to-emerald-800 bg-clip-text text-transparent">EVOLUIR</span>
                     </h2>
-                    <p className="text-black/90 text-base text-xl sm:text-lg max-w-2xl mx-auto">Escolha o plano perfeito para sua necessidade.</p>
+                    <p className="text-black/90 text-base text-xl sm:text-lg max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
@@ -65,7 +67,7 @@ export default function Preco() {
                         <div key={key} className={`relative bg-slate-950 backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${
                             plan.maisRecomendado 
                             ? "border-emerald-500 shadow-2xl shadow-green-500/20 lg:scale-105" 
-                            : "border-black-300 hover:border-slate-700"
+                            : "border-slate-700 hover:border-white"
                             }`}>
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full -translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 pointer-events-none rounded-lg" />
                                 {plan.maisRecomendado && (
@@ -78,7 +80,7 @@ export default function Preco() {
                             )}
 
                             <div className="text-center mb-6 sm:mb-8">
-                                <h3 className="text-xl sm:text-2xl font-bold mb-2">{plan.name}</h3>
+                                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
                                 <p className="text-white text-xs sm:text-sm mb-3 sm:mb-4">{plan.desc}</p>
                                 <div className="flex items-baseline justify-center">
                                     <span className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-400 to-emerald-600 bg-clip-text text-transparent">R${plan.price}</span>
@@ -92,7 +94,7 @@ export default function Preco() {
                                     <div className="flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-emerald-300/20 flex items-center justify-center mt-0.5">
                                         <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-green-400"/>
                                     </div>
-                                    <span className="text-white text-sm sm:text-base">{feature}</span>
+                                    <span className="text-white text-sm">{feature}</span>
                                   </li>
                                 ))}
                             </ul>
@@ -102,7 +104,7 @@ export default function Preco() {
                                ? "bg-gradient-to-b from-emerald-400 to-emerald-600"
                                : "bg-white/5 border border-white/10 hover:bg-white/10" 
                             }`}>
-                                Adquirir Plano
+                                COMEÇAR AGORA
                             </button>
                         </div>
                     ))}

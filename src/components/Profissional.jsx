@@ -7,16 +7,18 @@ export default function SobreMim() {
 
         {/* Texto */}
         <div className="flex-1 flex flex-col gap-6 text-center md:text-left order-2 md:order-1">
-          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-            Mais que técnica.<br />Presença.
+          <h2 className="text-4xl font-bold text-white leading-tight">
+            Quem vai te acompanhar nesse processo
           </h2>
-          <p className="text-slate-400 text-lg leading-relaxed">
-            Sou <span className="text-white font-semibold">Dyego Augusto</span>, nutricionista especializado em
-            emagrecimento, hipertrofia e performance esportiva.
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Sou <span className="text-white font-semibold">Dyego Augusto</span>, nutricionista esportivo, 
+            e meu foco é ajudar quem treina a finalmente ver resultado no próprio físico. Ao longo do tempo, eu percebi que o maior erro de quem treina não é tentar seguir a dieta perfeita, é fazer isso sem direcionamento.
+            Você provavelmente já sabe o que fazer, mas não consegue manter isso sozinho.
           </p>
-          <p className="text-slate-400 text-lg leading-relaxed">
-            Meu objetivo é unir conhecimento técnico com acompanhamento humano e próximo, para que cada
-            paciente se sinta verdadeiramente apoiado em cada etapa da jornada.
+          <p className="text-gray-300 text-lg leading-relaxed">
+            Meu foco hoje vai além da dieta. É acompanhar de perto, fazer ajustes e te fazer evoluir de forma constante.
+            Sem extremos, sem terrorismo alimentar. Só o que funciona na prática: dieta básica e bem feita com acompanhamento de verdade.
+            Fora isso, eu também treino, vivo essa rotina e sei exatamente como é na prática.
           </p>
             <div className="items-center justify-center gap-3 sm:gap-4 pt-3 animate-in slide-from-bottom duration-700 delay-300">
                 <a href="https://wa.me/00000000000"
