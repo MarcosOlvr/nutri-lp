@@ -14,7 +14,7 @@ export default function Hero() {
         return () => window.removeEventListener("mousemove", handleMouseMove);
     }, []);
     return ( 
-    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-emerald-900 to-black">
+    <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-emerald-950 via-emerald-900 to-white/85">
         <div className="absolute inset-0 opacity-30" style={
             {
                 background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`
@@ -33,7 +33,7 @@ export default function Hero() {
                     </div>
                     <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-white/10 border border-white/30 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 ml-2">
                         <Sparkles className="w-4 h-4 white" />
-                        <span className="text-xs sm:text-sm text-wite">Ajuste semanais ilimitados</span>
+                        <span className="text-xs sm:text-sm text-wite">Ajustes semanais ilimitados</span>
                     </div>
                     <h1 className="text-5xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
                         <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
@@ -52,7 +52,7 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-5">
-                        {["Emagrecimento", "Ganho de massa muscular", "Performance"].map((badge) => (
+                        {["Emagrecimento", "Performance", "Ganho de massa muscular"].map((badge) => (
                             <span key={badge} className="px-4 py-1.5 border border-emerald-600 text-white text-sm font-medium rounded-full">
                             {badge}
                             </span>

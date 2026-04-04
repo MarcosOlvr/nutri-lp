@@ -7,7 +7,7 @@ export default function SobreMim() {
 
         {/* Texto */}
         <div className="flex-1 flex flex-col gap-6 text-center md:text-left order-2 md:order-1">
-          <h2 className="text-4xl font-bold text-white leading-tight">
+          <h2 className="text-4xl font-bold text-white">
             Quem vai te acompanhar nesse processo
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
@@ -33,9 +33,9 @@ export default function SobreMim() {
         </div>
 
         {/* Foto */}
-        <div className="w-full md:w-[480px] h-[350px] md:h-[550px] rounded-2xl bg-slate-800 overflow-hidden order-1 md:order-2 flex-shrink-0">
+        <div className="w-full md:w-[480px] h-[550px] md:h-[650px] rounded-2xl bg-slate-800 overflow-hidden order-1 md:order-2 flex-shrink-0">
           <img
-            src="/sua-foto.png"
+            src="/profissional/img01.jpeg"
             alt="Foto"
             className="w-full h-full object-cover"
           />

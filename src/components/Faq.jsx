@@ -27,14 +27,14 @@ export default function FAQ() {
               <div key={index} className="border border-emerald-700 rounded-xl overflow-hidden">
                 <button
                   onClick={() => setOpen(open === index ? null : index)}
-                  className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-colors ${open === index ? "text-black" : "text-black"} hover:bg-green-200`}
+                  className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-colors ${open === index ? "text-black" : "text-black"} hover:bg-white/40`}
                 >
                   <span>{faq.question}</span>
                   <span className="text-xl ml-4">{open === index ? "▲" : "▼"}</span>
                 </button>
 
                 {open === index && (
-                  <div className="px-6 py-4 text-black/90 text-base leading-relaxed border-t border-slate-700">
+                  <div className="px-6 py-4 text-black/90 text-base leading-relaxed border-t border-emerald-700">
                     {faq.answer}
                   </div>
                 )}

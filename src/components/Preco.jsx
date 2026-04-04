@@ -3,7 +3,7 @@ import { Check, Star } from "lucide-react";
 const plans = [
     {
         name: "Mensal - Início da Organização ",
-        price: "199,99", 
+        price: "200", 
         pricePerMonth: "",
         desc: "Para quem quer parar de tentar sozinho e começar com direção. Aqui você começa a organizar sua alimentação e identificar o que está te travando.",
         features: [
@@ -22,7 +22,7 @@ const plans = [
         pricePerMonth: "R$180",
         desc: "Para quem quer sair da estagnação e ter resultado de verdade. Aqui você deixa de “testar dieta” e começa a seguir uma estratégia de fato.",
         features: [
-            "Consulta inicial completa e avaliação profunda",
+            "Consulta inicial completa e avaliação detalhada",
             "Plano alimentar personalizado e ajustado à sua realidade", 
             "Acompanhamento semanal com feedbacks estratégicos",
             "Ajustes constantes conforme seu corpo responde",
@@ -55,11 +55,11 @@ export default function Preco() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                        <span className="bg-gradient-to-b from-gray-700 to-black bg-clip-text text-transparent">Escolha como você quer</span>
+                        <span className="bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent">Escolha como você quer</span>
                         <br />
-                        <span  className="bg-gradient-to-b from-emerald-400 to-emerald-800 bg-clip-text text-transparent">EVOLUIR</span>
+                        <span  className="bg-gradient-to-b from-yellow-400 to-yellow-800 bg-clip-text text-transparent">EVOLUIR</span>
                     </h2>
-                    <p className="text-black/90 text-base text-xl sm:text-lg max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
+                    <p className="text-white/90 text-base text-xl sm:text-lg max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">

@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className=""> 
                         <img className="w-6 h-6 sm:w-25 sm:h-25" src="/logo.png"></img>
                     </div>
-                    <p className="text-white text-sm"><span className="font-bold">CRN 3</span> 00000</p>
+                    <p className="text-white text-sm font-bold">CRN 6 49530</p>
                     <p className="text-slate-400 text-sm">© Copyright 2026.<br />Todos os direitos reservados</p>   
                 </div>
 
@@ -26,16 +26,16 @@ export default function Footer() {
                 <div className="flex flex-col gap-4 border-r border-l border-slate-700 px-2 text-center">
                     <h4 className="text-white font-bold text-lg">Entre em contato</h4>
                     {[
-                        { icon: <FaInstagram />, label: "/nutridyego", href: "#" },
-                        { icon: <FaEnvelope />, label: "dyegoaugustonutri@gmail.com", href: "#" },
+                        { icon: <FaInstagram />, label: "/nutridyego"},
+                        { icon: <FaEnvelope />, label: "dyegoaugustonutri@gmail.com"},
                     ].map((social, index) => (
                         <div className="flex justify-center">
-                            <a key={index} href={social.href} className="flex items-center text-slate-400 hover:text-white transition-colors text-base">
+                            <p key={index} className="flex items-center text-slate-400 hover:text-white transition-colors text-base">
                                 <span className="w-8 h-8 flex items-center justify-center text-xl">
                                     {social.icon}
                                 </span>
                                 {social.label}
-                            </a>
+                            </p>
                         </div>
                     ))}
                 </div>
