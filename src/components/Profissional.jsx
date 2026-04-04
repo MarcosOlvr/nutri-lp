@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function SobreMim() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/bg/green.jpg')"}}>
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
         {/* Texto */}
@@ -33,9 +33,9 @@ export default function SobreMim() {
         </div>
 
         {/* Foto */}
-        <div className="w-full md:w-[480px] h-[550px] md:h-[650px] rounded-2xl bg-slate-800 overflow-hidden order-1 md:order-2 flex-shrink-0">
+        <div className="w-full md:w-[500px] h-[400px] md:h-[500px] rounded-2xl overflow-hidden order-1 md:order-2 flex-shrink-0">
           <img
-            src="/profissional/img01.jpeg"
+            src="/profissional/img02.png"
             alt="Foto"
             className="w-full h-full object-cover"
           />

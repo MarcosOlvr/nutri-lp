@@ -12,7 +12,7 @@ export default function FAQ() {
   const [open, setOpen] = useState(null);
 
   return (
-    <section className="py-20 px-6 bg-white/85">
+    <section className="py-20 px-6 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/bg/white.jpg')"}}>
       <div className="max-w-6xl mx-auto">
 
         <h2 className="text-black text-4xl font-bold mb-12 text-center sm:text-start">
@@ -24,17 +24,17 @@ export default function FAQ() {
           {/* Accordion */}
           <div className="flex flex-col gap-3 flex-1">
             {faqs.map((faq, index) => (
-              <div key={index} className="border border-emerald-700 rounded-xl overflow-hidden">
+              <div key={index} className="border-2 border-black rounded-xl overflow-hidden hover:border-emerald-500 transition-colors">
                 <button
                   onClick={() => setOpen(open === index ? null : index)}
-                  className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-colors ${open === index ? "text-black" : "text-black"} hover:bg-white/40`}
+                  className={`w-full flex justify-between items-center px-6 py-4 text-left font-medium transition-colors ${open === index ? "text-black" : "text-black"}`}
                 >
                   <span>{faq.question}</span>
                   <span className="text-xl ml-4">{open === index ? "▲" : "▼"}</span>
                 </button>
 
                 {open === index && (
-                  <div className="px-6 py-4 text-black/90 text-base leading-relaxed border-t border-emerald-700">
+                  <div className="px-6 py-4 text-black/90 text-base leading-relaxed border-t border-black">
                     {faq.answer}
                   </div>
                 )}
