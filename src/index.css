@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Montserrat";
+    src: url('/public/font/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
 
 @layer utilities {
     .animate-in {
@@ -33,6 +42,38 @@
     
     .delay-300 {
         animation-delay: 300ms;
+    }
+
+    .text-preto {
+        color: #263238;
+    }
+
+    .bg-silver {
+        background-color: #F5F7FA;
+    }
+
+    .text-l-grey {
+        color: #717171;
+    }
+
+    .text-d-grey {
+        color: #4D4D4D;
+    }
+
+    .text-green {
+        color: #43A046;
+    }
+
+    .bg-green {
+        background-color: #43A046;
+    }
+
+    .border-green {
+        border-color: #43A046;
+    }
+
+    .bg-l-green {
+        background-color: #66BB69;
     }
 }
 

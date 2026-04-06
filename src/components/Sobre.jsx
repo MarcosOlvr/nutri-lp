@@ -2,13 +2,13 @@ import { ArrowRight, BicepsFlexed, Dumbbell, OctagonX, AlarmClockOff, ListX, Sli
 
 export default function Sobre() {
     return ( 
-    <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/bg/white.jpg')"}}>
+    <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-white">
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-6 sm:mb-8 lg:mb-10">
                 <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                    <span className="bg-gradient-to-b from-black to-gray-600 bg-clip-text text-transparent">Meu acompanhamento</span>
+                    <span className="text-preto">Meu acompanhamento</span>
                     <br />
-                    <span  className="bg-gradient-to-b from-emerald-600 to-emerald-800 bg-clip-text text-transparent">é para você que:</span>
+                    <span  className="text-green">é para você que:</span>
                 </h2>
             </div>
 
@@ -16,7 +16,7 @@ export default function Sobre() {
                 <div className="flex mb-4">
                     <div className="pb-10 mx-auto text-center rounded">
                         <div className="px-8 text-center pb-16 sm:pb-24">
-                            <p className="mb-5 sm:mb-7 border-b-2 border-emerald-700"></p>
+                            <p className="mb-5 sm:mb-7 border-b-2 border-green"></p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
                                 {[
@@ -28,8 +28,8 @@ export default function Sobre() {
                                 { icon: <OctagonX />, desc: "Cansou de dietas restritivas e abordagens que não se sustentam no longo prazo" },
                                 ].map((item, index) => (
                                 <div key={index} className="flex flex-col items-center gap-4">
-                                    <span className="text-4xl text-black">{item.icon}</span>
-                                    <p className="text-black/80 text-sm sm:text-base leading-relaxed max-w-xs">{item.desc}</p>
+                                    <span className="text-4xl text-green">{item.icon}</span>
+                                    <p className="text-preto text-sm sm:text-base leading-relaxed max-w-xs">{item.desc}</p>
                                 </div>
                                 ))}
                             </div>
@@ -39,9 +39,9 @@ export default function Sobre() {
             </div>
             <div className="max-w-5xl mx-auto text-center">
                 <h2 className="text-black text-3xl md:text-4xl font-bold mb-16">
-                    <span className="bg-gradient-to-b from-black to-gray-700 bg-clip-text text-transparent">Como funciona o método</span>
+                    <span className="text-preto">Como funciona o método</span>
                     <br />
-                    <span  className="bg-gradient-to-b from-emerald-600 to-emerald-800 bg-clip-text text-transparent">EVOLUIR?</span>
+                    <span  className="text-green">EVOLUIR?</span>
                 </h2>
 
                 {/* 3 primeiros */}
@@ -52,13 +52,13 @@ export default function Sobre() {
                     { num: "03", title: "Execução com suporte", desc: "Você não fica sozinho tentando acertar. Eu acompanho de perto durante o processo." },
                 ].map((step) => (
                     <div key={step.num} className="relative flex flex-col items-center text-center">
-                    <div className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-emerald-900 mb-5">
-                        {step.num}
-                    </div>
-                    <div className="bg-emerald-900 border border-slate-700 hover:border-emerald-500 transition-colors rounded-2xl p-6 flex flex-col gap-3 h-full">
-                        <h3 className="text-white font-bold text-base border-b border-green-400 pb-2">{step.title}</h3>
-                        <p className="text-white/90 text-sm sm:text-base leading-relaxed">{step.desc}</p>
-                    </div>
+                        <div className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-emerald-900 mb-5">
+                            {step.num}
+                        </div>
+                        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 h-full">
+                            <h3 className="text-preto font-bold text-base border-b border-green pb-2">{step.title}</h3>
+                            <p className="text-d-grey text-sm sm:text-base leading-relaxed">{step.desc}</p>
+                        </div>
                     </div>
                 ))}
                 </div>
@@ -69,21 +69,21 @@ export default function Sobre() {
                     { num: "04", title: "Ajustes semanais", desc: "Seu corpo responde e a gente acompanha. É aqui que a maioria das pessoas erra quando tenta fazer sozinho." },
                     { num: "05", title: "Evolução contínua", desc: "O foco não é só começar bem, é continuar evoluindo semana após semana." },
                 ].map((step) => (
-                    <div key={step.num} className="relative flex flex-col items-center text-center">
-                    <div className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-emerald-900 mb-5">
-                        {step.num}
-                    </div>
-                    <div className="bg-emerald-900 border border-slate-700 hover:border-emerald-500 transition-colors rounded-2xl p-6 flex flex-col gap-3 h-full">
-                        <h3 className="text-white font-bold text-base border-b border-green-400 pb-2">{step.title}</h3>
-                        <p className="text-white/90 text-sm sm:text-base leading-relaxed">{step.desc}</p>
-                    </div>
+                    <div key={step.num} className="relative flex flex-col items-center text-center">      
+                        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 h-full">
+                            <div className="relative z-10 w-14 h-14 rounded-full bg-green flex items-center justify-center text-white font-bold text-lg mb-3">
+                                {step.num}
+                            </div>
+                            <h3 className="text-preto font-bold text-base border-b border-green pb-2">{step.title}</h3>
+                            <p className="text-d-grey text-sm sm:text-base leading-relaxed">{step.desc}</p>
+                        </div>
                     </div>
                 ))}
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
                     <a href="#planos">
-                        <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-emerald-500 to-emerald-700 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
+                        <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-green rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
                             <span>QUERO MEU PLANEJAMENTO</span>
                             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300"/> 
                         </button>

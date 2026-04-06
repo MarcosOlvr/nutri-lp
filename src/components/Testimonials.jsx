@@ -31,31 +31,29 @@ export default function Depoimentos() {
   };
 
   return (
-    <section id="depoimentos" className="py-20 relative bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/bg/white.jpg')"}}>
+    <section id="depoimentos" className="py-20 relative bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-emerald-600 mb-2 uppercase tracking-wider text-sm">COM DÚVIDAS?</p>
-          <h2 className="text-4xl md:text-5xl mb-4 text-black">
+          <h2 className="text-4xl md:text-5xl mb-4 text-preto">
             O que acontece quando você para de tentar sozinho
           </h2>
-          <p className="text-gray-600 text-lg">
-            Resultados <span className="text-emerald-600">reais</span> de quem começou a seguir uma estratégia com acompanhamento
+          <p className="text-d-grey text-lg">
+            Resultados reais de quem começou a seguir uma estratégia com acompanhamento
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-            <Quote className="absolute top-4 left-4 w-12 h-12 text-emerald-200" />
+            <Quote className="absolute top-4 left-4 w-12 h-12 text-green" />
             
             <div className="mb-6">
-              <h3 className="text-xl mb-2">Feedback Aberto</h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-d-grey my-4">
                 O que você gostaria de compartilhar sobre sua experiência?
               </p>
             </div>
 
-            <div className="bg-emerald-50 rounded-xl p-6 mb-6 min-h-[180px] flex items-center">
-              <p className="text-gray-700 italic text-lg leading-relaxed">
+            <div className="bg-emerald-100 rounded-xl p-6 mb-6 min-h-[180px] flex items-center">
+              <p className="text-preto italic text-lg leading-relaxed">
                 "{testimonials[currentIndex].text}"
               </p>
             </div>
@@ -81,7 +79,7 @@ export default function Depoimentos() {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`w-2 h-2 rounded-full transition-all ${
-                      index === currentIndex ? 'bg-emerald-600 w-8' : 'bg-gray-300'
+                      index === currentIndex ? 'bg-green w-8' : 'bg-gray-300'
                     }`}
                   />
                 ))}
