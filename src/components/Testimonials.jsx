@@ -44,7 +44,7 @@ export default function Depoimentos() {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-            <Quote className="absolute top-4 left-4 w-12 h-12 text-green" />
+            <Quote className="absolute top-4 left-4 w-12 h-12 text-green pb-3" />
             
             <div className="mb-6">
               <p className="text-d-grey my-4">

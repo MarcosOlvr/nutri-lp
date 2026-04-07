@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url('/public/font/Montserrat-Regular.ttf');
+    src: url('/font/Montserrat-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -48,12 +48,12 @@ body {
         color: #263238;
     }
 
-    .bg-silver {
-        background-color: #F5F7FA;
+    .text-silver {
+        color: #F5F7FA;
     }
 
-    .text-l-grey {
-        color: #717171;
+    .bg-silver {
+        background-color: #F5F7FA;
     }
 
     .text-d-grey {
@@ -70,10 +70,6 @@ body {
 
     .border-green {
         border-color: #43A046;
-    }
-
-    .bg-l-green {
-        background-color: #66BB69;
     }
 }
 

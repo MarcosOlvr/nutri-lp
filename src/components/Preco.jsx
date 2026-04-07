@@ -54,12 +54,11 @@ export default function Preco() {
         <section id="planos" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-                    <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                        <span className="text-preto">Escolha como você quer</span>
-                        <br />
-                        <span  className="text-green">EVOLUIR</span>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                        <span className="text-preto">Escolha como você quer </span>
+                        <span className="text-green">EVOLUIR</span>
                     </h2>
-                    <p className="text-d-grey text-base text-xl sm:text-lg max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
+                    <p className="text-d-grey text-lg md:text-xl max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
@@ -104,7 +103,7 @@ export default function Preco() {
                                ? "bg-green"
                                : "bg-gray-600 border hover:bg-gray-600/90" 
                             }`}>
-                                COMEÇAR AGORA
+                                {plan.maisRecomendado ? "EU QUERO EVOLUIR" : "COMEÇAR AGORA"}
                             </button>
                         </div>
                     ))}

@@ -1,4 +1,4 @@
-import { ArrowRight, BicepsFlexed, Dumbbell, OctagonX, AlarmClockOff, ListX, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, BicepsFlexed, Dumbbell, OctagonX, AlarmClockOff, ListX, SlidersHorizontal, SquareChartGantt, TrendingUp, CalendarCog, HandHelping, FilePenLine } from "lucide-react";
 
 export default function Sobre() {
     return ( 
@@ -13,8 +13,8 @@ export default function Sobre() {
             </div>
 
             <div className="space-y-16 sm:space-y-20 lg:space-y-32 bg-emerald"> 
-                <div className="flex mb-4">
-                    <div className="pb-10 mx-auto text-center rounded">
+                <div className="flex">
+                    <div className="mx-auto text-center">
                         <div className="px-8 text-center pb-16 sm:pb-24">
                             <p className="mb-5 sm:mb-7 border-b-2 border-green"></p>
 
@@ -47,15 +47,15 @@ export default function Sobre() {
                 {/* 3 primeiros */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 {[
-                    { num: "01", title: "Diagnóstico real", desc: "Antes de qualquer dieta, eu preciso entender sua rotina, treino, dificuldades e histórico. Nada de plano genérico." },
-                    { num: "02", title: "Estratégia personalizada", desc: "Montamos uma dieta ajustada à sua realidade, sem complicação, sem alimento impossível." },
-                    { num: "03", title: "Execução com suporte", desc: "Você não fica sozinho tentando acertar. Eu acompanho de perto durante o processo." },
+                    { num: "01", icon: <SquareChartGantt />, title: "Diagnóstico real", desc: "Antes de qualquer dieta, eu preciso entender sua rotina, treino, dificuldades e histórico. Nada de plano genérico." },
+                    { num: "02", icon: <FilePenLine/>, title: "Estratégia personalizada", desc: "Montamos uma dieta ajustada à sua realidade, sem complicação, sem alimento impossível." },
+                    { num: "03", icon: <HandHelping/>,title: "Execução com suporte", desc: "Você não fica sozinho tentando acertar. Eu acompanho de perto durante o processo." },
                 ].map((step) => (
-                    <div key={step.num} className="relative flex flex-col items-center text-center">
-                        <div className="relative z-10 w-14 h-14 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-emerald-900 mb-5">
-                            {step.num}
-                        </div>
-                        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 h-full">
+                    <div key={step.num} className="relative flex flex-col items-center text-center">      
+                        <div className="bg-white shadow-xl rounded-2xl p-6 flex flex-col gap-3 h-full items-center">
+                            <div className="relative z-10 w-14 h-14 rounded-full bg-green flex items-center justify-center text-white font-bold text-lg mb-3 mx-auto">
+                                {step.icon}
+                            </div>
                             <h3 className="text-preto font-bold text-base border-b border-green pb-2">{step.title}</h3>
                             <p className="text-d-grey text-sm sm:text-base leading-relaxed">{step.desc}</p>
                         </div>
@@ -66,13 +66,13 @@ export default function Sobre() {
                 {/* 2 últimos centralizados */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-2xl mx-auto">
                 {[
-                    { num: "04", title: "Ajustes semanais", desc: "Seu corpo responde e a gente acompanha. É aqui que a maioria das pessoas erra quando tenta fazer sozinho." },
-                    { num: "05", title: "Evolução contínua", desc: "O foco não é só começar bem, é continuar evoluindo semana após semana." },
+                    { num: "04", icon: <CalendarCog/>,title: "Ajustes semanais", desc: "Seu corpo responde e a gente acompanha. É aqui que a maioria das pessoas erra quando tenta fazer sozinho." },
+                    { num: "05", icon: <TrendingUp />, title: "Evolução contínua", desc: "O foco não é só começar bem, é continuar evoluindo semana após semana." },
                 ].map((step) => (
                     <div key={step.num} className="relative flex flex-col items-center text-center">      
-                        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col gap-3 h-full">
-                            <div className="relative z-10 w-14 h-14 rounded-full bg-green flex items-center justify-center text-white font-bold text-lg mb-3">
-                                {step.num}
+                        <div className="bg-white shadow-xl rounded-2xl p-6 flex flex-col gap-3 h-full items-center">
+                            <div className="relative z-10 w-14 h-14 rounded-full bg-green flex items-center justify-center text-white font-bold text-lg mb-3 mx-auto">
+                                {step.icon}
                             </div>
                             <h3 className="text-preto font-bold text-base border-b border-green pb-2">{step.title}</h3>
                             <p className="text-d-grey text-sm sm:text-base leading-relaxed">{step.desc}</p>
