@@ -21,8 +21,8 @@ export default function Hero() {
                         </a>
                     </div>
                 </div>
-                <div className="relative order-2 w-full lg:w-4xl shadow-2xl">
-                    <iframe className="aspect-video rounded-lg" src="https://www.youtube.com/embed/T939YUUrLB8?si=z0ZsfQ9p61U9WY-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div className="relative order-2 w-full max-w-4xl shadow-2xl">
+                    <iframe className="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/T939YUUrLB8?si=z0ZsfQ9p61U9WY-R" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

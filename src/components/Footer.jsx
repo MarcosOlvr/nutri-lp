@@ -16,7 +16,7 @@ export default function Footer() {
                 {/* Logo e info */}
                 <div className="flex flex-col gap-4 text-center">
                     <div className="flex justify-center"> 
-                        <img className="w-6 h-6 sm:w-15 sm:h-20" src="/logo.png"></img>
+                        <img className="w-6 h-6 sm:w-15 sm:h-20" src="logo.png"></img>
                     </div>
                     <p className="text-preto text-sm font-bold">CRN 6 49530</p>
                     <p className="text-d-grey text-sm">© Copyright 2026.<br />Todos os direitos reservados</p>   

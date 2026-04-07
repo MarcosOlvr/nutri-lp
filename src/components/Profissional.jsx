@@ -7,11 +7,11 @@ export default function SobreMim() {
 
         {/* Texto */}
         <div className="flex-1 flex flex-col gap-6 text-center lg:text-left order-2 lg:order-1">
-          <div className="flex justify-center lg:justify-start">
-              <h2 className="text-4xl font-bold text-preto">
+          <div className="block sm:flex justify-center lg:justify-start">
+              <h2 className="text-4xl font-bold text-preto mb-5 sm:mb-0">
                 Dyego Augusto
               </h2> 
-              <div className="flex items-center justify-center space-x-2 px-2 py-3 sm:px-3 bg-silver border border-green rounded-full ml-3 animate-in slide-in-from-bottom duration-700">
+              <div className="flex items-center justify-center space-x-2 px-2 py-3 sm:px-3 bg-silver border border-green rounded-full sm:ml-3 animate-in slide-in-from-bottom duration-700">
                   <span className="text-xs sm:text-sm text-green font-bold">CRN 6 49530</span>
               </div>
           </div>
@@ -40,7 +40,7 @@ export default function SobreMim() {
         {/* Foto */}
         <div className="max-w-lg w-full rounded-2xl overflow-hidden order-1 lg:order-2 flex-shrink-0">
           <img
-            src="/profissional/img01.png"
+            src="profissional/img01.png"
             alt="Foto"
             className="w-full h-full object-cover"
           />
