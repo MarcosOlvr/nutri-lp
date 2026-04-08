@@ -12,7 +12,7 @@ export default function SobreMim() {
                 Dyego Augusto
               </h2> 
               <div className="flex items-center justify-center space-x-2 px-2 py-3 sm:px-3 bg-silver border border-green rounded-full sm:ml-3 animate-in slide-in-from-bottom duration-700">
-                  <span className="text-xs sm:text-sm text-green font-bold">CRN 6 49530</span>
+                  <span className="text-xs sm:text-sm text-green font-bold">CRN6 49530</span>
               </div>
           </div>
           <p className="text-d-grey text-lg leading-relaxed">

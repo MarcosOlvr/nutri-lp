@@ -5,7 +5,7 @@ export default function Sobre() {
     <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-white">
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-6 sm:mb-8 lg:mb-10">
-                <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                     <span className="text-preto">Meu acompanhamento</span>
                     <br />
                     <span  className="text-green">é para você que:</span>
@@ -38,10 +38,8 @@ export default function Sobre() {
                 </div>
             </div>
             <div className="max-w-5xl mx-auto text-center">
-                <h2 className="text-black text-3xl md:text-4xl font-bold mb-16">
-                    <span className="text-preto">Como funciona o método</span>
-                    <br />
-                    <span  className="text-green">EVOLUIR?</span>
+                <h2 className="text-preto text-3xl md:text-4xl font-bold mb-16">
+                    Como funciona o método <span  className="text-green">EVOLUIR?</span>
                 </h2>
 
                 {/* 3 primeiros */}

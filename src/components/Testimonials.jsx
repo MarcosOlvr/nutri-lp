@@ -34,10 +34,10 @@ export default function Depoimentos() {
     <section id="depoimentos" className="py-20 relative bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4 text-preto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-preto">
             O que acontece quando você para de tentar sozinho
           </h2>
-          <p className="text-d-grey text-lg">
+          <p className="text-d-grey text-base sm:text-lg">
             Resultados reais de quem começou a seguir uma estratégia com acompanhamento
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Depoimentos() {
             </div>
 
             <div className="bg-emerald-100 rounded-xl p-6 mb-6 min-h-[180px] flex items-center">
-              <p className="text-preto italic text-lg leading-relaxed">
+              <p className="text-preto italic text-base sm:text-lg leading-relaxed">
                 "{testimonials[currentIndex].text}"
               </p>
             </div>

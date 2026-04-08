@@ -45,8 +45,8 @@ export default function FAQ() {
           {/* Lado direito */}
           <div className="md:w-85 flex flex-col gap-6 text-center md:text-start">
               <div>
-                  <h3 className="text-preto text-3xl font-bold leading-tight">Ficou com alguma dúvida?</h3>
-                  <p className="text-d-grey text-base mt-3">
+                  <h3 className="text-preto text-lg md:text-2xl font-bold leading-tight">Ficou com alguma dúvida?</h3>
+                  <p className="text-d-grey text-sm mt-3">
                     Confira as respostas para as perguntas frequentes ou entre em contato comigo:
                   </p>
               </div>
@@ -60,8 +60,8 @@ export default function FAQ() {
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.827L.057 23.428a.75.75 0 00.915.915l5.601-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.523-5.184-1.433l-.372-.22-3.862 1.013 1.013-3.696-.242-.383A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
                 </svg>
                 <div className="text-start">
-                    <p className="text-white font-bold text-sm uppercase tracking-wide">Atendimento por WhatsApp</p>
-                    <p className="text-white/90 text-sm">Toque aqui para tirar suas dúvidas</p>
+                    <p className="text-white font-bold text-xs uppercase tracking-wide">Atendimento por WhatsApp</p>
+                    <p className="text-white/90 text-xs">Toque aqui para tirar suas dúvidas</p>
                 </div>
               </a>
           </div>

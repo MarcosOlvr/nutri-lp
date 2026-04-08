@@ -5,9 +5,9 @@ export default function Footer() {
     <section className="bg-silver">
         <footer className="p-8">
             <div className="flex flex-col items-center gap-4 lg:hidden">
-                <div className="flex gap-4">
-                    <FaInstagram className="text-preto hover:text-black/90 w-5 h-5 cursor-pointer" />
-                    <FaEnvelope className="text-preto hover:text-black/90 w-5 h-5 cursor-pointer" />
+                <div className="flex justify-center"> 
+                    <img className="w-5 h-6 mx-2" src="logo.png"></img>
+                    <p className="text-preto text-sm">Dyego Augusto - <span className="text-green">Nutricionista Esportivo</span></p>
                 </div>
                 <p className="text-preto text-sm text-center">© Copyright 2026.<br /> Todos os direitos reservados</p>
             </div>
@@ -18,7 +18,7 @@ export default function Footer() {
                     <div className="flex justify-center"> 
                         <img className="w-6 h-6 sm:w-15 sm:h-20" src="logo.png"></img>
                     </div>
-                    <p className="text-preto text-sm font-bold">CRN 6 49530</p>
+                    <p className="text-preto text-sm font-bold">CRN6 49530</p>
                     <p className="text-d-grey text-sm">© Copyright 2026.<br />Todos os direitos reservados</p>   
                 </div>
 

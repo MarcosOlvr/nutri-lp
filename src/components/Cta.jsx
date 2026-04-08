@@ -10,14 +10,14 @@ export default function Cta() {
 
             {/* Decoração direita */}
             <div className="block absolute -right-8 top-0 w-48 h-full opacity-80">
-                <div className="absolute right-0 top-0 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-white border-b-[200px] border-b-transparent" />
-                <div className="absolute right-0 bottom-0 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-white border-t-[200px] border-t-transparent" />
+                <div className="hidden md:block absolute right-0 top-0 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-white border-b-[200px] border-b-transparent" />
+                <div className="hidden md:block absolute right-0 bottom-0 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-white border-t-[200px] border-t-transparent" />
             </div>
 
             {/* Conteúdo */}
             <div className="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center gap-6">
-                <h2 className="text-white text-xl sm:text-2xl md:text-4xl font-bold leading-tight">
-                Se você quer parar de errar na dieta <br/> o próximo passo é esse
+                <h2 className="text-white text-lg sm:text-2xl md:text-4xl font-bold leading-tight">
+                    Se você quer parar de errar na dieta <br/> o próximo passo é esse
                 </h2>
                 <p className="text-silver text-sm md:text-base">
                     Você pode continuar tentando sozinho, ajustando uma coisa ou outra,
