@@ -51,14 +51,14 @@ const plans = [
 ]
 export default function Preco() {
     return ( 
-        <section id="planos" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-white">
+        <section id="planos" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-green">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-                        <span className="text-preto">Escolha como você quer </span>
-                        <span className="text-green">EVOLUIR</span>
+                        <span className="text-white">Escolha como você quer </span>
+                        <span className="text-white">EVOLUIR</span>
                     </h2>
-                    <p className="text-d-grey text-base sm:text-lg md:text-xl max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
+                    <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
@@ -71,9 +71,9 @@ export default function Preco() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full -translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 pointer-events-none rounded-lg" />
                                 {plan.maisRecomendado && (
                                 <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
-                                    <div className="flex items-center space-x-1 px-4 py-1 sm:py-1.5 bg-green rounded-full text-[10px] sm:text-sm font-semibold shadow-lg whitespace-nowrap">
-                                        <Star className="w-2 h-2 sm:w-3 sm:h-3 fill-white"/>
-                                        <span>Mais Recomendado</span>
+                                    <div className="flex items-center space-x-1 px-4 py-1 sm:py-1.5 bg-white rounded-full text-[10px] sm:text-sm font-semibold shadow-lg whitespace-nowrap border border-green">
+                                        <Star className="w-2 h-2 sm:w-3 sm:h-3 text-green"/>
+                                        <span className="text-green">Mais Recomendado</span>
                                     </div>
                                 </div>
                             )}

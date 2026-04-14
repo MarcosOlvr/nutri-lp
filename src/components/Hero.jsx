@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function Hero() {
     return ( 
-    <section className="relative md:min-h-screen flex  justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-silver">      
+    <section className="relative md:max-h-screen flex  justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-silver">      
         <div className="max-w-7x mx-auto text-center relative w-full pt-10">
             <div className="max-w-7xl mx-auto flex flex-col text-center gap-6 sm:gap-8 lg:gap-12 items-center relative">
                 <div>

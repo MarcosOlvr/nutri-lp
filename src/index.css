@@ -71,6 +71,10 @@ body {
     .border-green {
         border-color: #43A046;
     }
+
+    .text-yellow {
+        color: #FFD600;
+    }
 }
 
 @keyframes slideInFromTop {
