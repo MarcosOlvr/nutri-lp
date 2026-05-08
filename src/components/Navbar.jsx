@@ -10,11 +10,8 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
                 <div className="flex items-center space-x-1 group cursor-pointer">
                     <div className="p-2">
-                        <img src="logo.png" alt="Dyego - Nutricionista Esportivo" className="w-4 h-5 sm:w-6 sm:h-8"/>
+                        <img src="logos/logo01.png" alt="Dyego - Nutricionista Esportivo" className="w-45 md:w-60"/>
                     </div>
-                    <span className="text-lg sm:text-xl md:text-2xl font-medium">
-                        <span className="text-preto">Dyego Augusto Nutricionista</span>
-                    </span>
                 </div>
 
                 {/* nav links */}

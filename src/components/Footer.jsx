@@ -6,8 +6,7 @@ export default function Footer() {
         <footer className="p-8">
             <div className="flex flex-col items-center gap-4 lg:hidden">
                 <div className="flex justify-center"> 
-                    <img className="w-5 h-6 mx-2" src="logo.png"></img>
-                    <p className="text-preto text-sm">Dyego Augusto - <span className="text-green">Nutricionista Esportivo</span></p>
+                    <img className="w-50 mx-2" src="logos/logo01.png"></img>
                 </div>
                 <p className="text-preto text-sm text-center">© Copyright 2026.<br /> Todos os direitos reservados</p>
             </div>
@@ -16,7 +15,7 @@ export default function Footer() {
                 {/* Logo e info */}
                 <div className="flex flex-col gap-4 text-center">
                     <div className="flex justify-center"> 
-                        <img className="w-6 h-6 sm:w-15 sm:h-20" src="logo.png"></img>
+                        <img className="w-70" src="logos/logo01.png"></img>
                     </div>
                     <p className="text-preto text-sm font-bold">CRN6 49530</p>
                     <p className="text-d-grey text-sm">© Copyright 2026.<br />Todos os direitos reservados</p>   
