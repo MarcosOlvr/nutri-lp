@@ -98,13 +98,15 @@ export default function Preco() {
                                 ))}
                             </ul>
 
-                            <button className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-300 mt-auto hover:scale-102 cursor-pointer text-sm sm:text-base ${
-                               plan.maisRecomendado
-                               ? "bg-green"
-                               : "bg-gray-600 border hover:bg-gray-600/90" 
-                            }`}>
-                                {plan.maisRecomendado ? "EU QUERO EVOLUIR" : "COMEÇAR AGORA"}
-                            </button>
+                            <a href="https://wa.me/5584987565839" target="_blank" rel="noopener noreferrer">
+                                <button className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-300 mt-auto hover:scale-102 cursor-pointer text-sm sm:text-base ${
+                                    plan.maisRecomendado
+                                    ? "bg-green"
+                                    : "bg-gray-600 border hover:bg-gray-600/90" 
+                                    }`}>
+                                        {plan.maisRecomendado ? "EU QUERO EVOLUIR" : "COMEÇAR AGORA"}
+                                </button>
+                            </a>
                         </div>
                     ))}
                 </div>

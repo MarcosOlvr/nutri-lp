@@ -50,7 +50,7 @@ export default function FAQ() {
                     Confira as respostas para as perguntas frequentes ou entre em contato comigo:
                   </p>
               </div>
-              <a href="https://wa.me/00000000000"
+              <a href="https://wa.me/5584987565839"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 bg-green hover:scale-102 border border-emerald-300 rounded-xl p-5"
