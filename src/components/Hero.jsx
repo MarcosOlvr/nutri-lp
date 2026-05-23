@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
             {/* Imagem */}
             <div className="w-full lg:w-1/2 flex items-center justify-center animate-in slide-in-from-bottom duration-700">   
-                <div className="relative max-w-xl mx-auto">
+                <div className="relative max-w-xl mx-auto md:pt-3">
                     <img
                         src="./profissional/img02.png"
                         alt="Foto de Dyego Augusto"
