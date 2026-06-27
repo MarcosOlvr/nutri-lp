@@ -26,7 +26,7 @@ export default function SobreMim() {
             Fora isso, eu também treino, vivo essa rotina e sei exatamente como é na prática.
           </p>
             <div className="items-center justify-center gap-3 sm:gap-4 pt-3 animate-in slide-from-bottom duration-700 delay-300">
-                <a href="https://wa.me/00000000000"
+                <a href="https://wa.me/5584987565839"
                     target="_blank"
                     rel="noopener noreferrer">
                     <button className="w-full lg:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-green rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">

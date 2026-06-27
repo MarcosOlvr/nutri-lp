@@ -2,7 +2,7 @@ import { ArrowRight, BicepsFlexed, Dumbbell, OctagonX, AlarmClockOff, ListX, Sli
 
 export default function Sobre() {
     return ( 
-    <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-silver">
+    <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-silver scroll-mt-20">
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-6 sm:mb-8 lg:mb-10">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">

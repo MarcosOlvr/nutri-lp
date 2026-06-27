@@ -48,8 +48,8 @@ export default function Evoluir() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 animate-in slide-from-bottom duration-700 delay-300">
                     <a href="#planos">
                         <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2 cursor-pointer">
-                            <span className="text-green">QUERO MEU PLANEJAMENTO</span>
-                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300 text-green"/> 
+                            <span className="text-preto">QUERO MEU PLANEJAMENTO</span>
+                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300 text-preto"/> 
                         </button>
                     </a>
                 </div>
