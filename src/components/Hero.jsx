@@ -3,22 +3,20 @@ import { useEffect, useState } from "react";
 
 export default function Hero() {
     return ( 
-    <section className="relative md:min-h-screen flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-silver">
-    <div className="absolute top-0 right-0 w-96 h-96 bg-green-200 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-    <div className="absolute bottom-0 left-0 w-74 h-74 bg-green-100 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
+    <section className="relative md:min-h-screen flex items-center justify-center py-16 sm:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center" style={{backgroundImage: "url('BG-03.png')"}}>
     <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
             {/* Texto */}
             <div className="w-full lg:w-1/2 text-center lg:text-left"> 
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 animate-in slide-in-from-bottom duration-700 tracking-tight leading-tight pt-10 lg:pt-0">
-                    <span className="text-preto block">
+                    <span className="text-white block">
                         INVENTA ALGO PRA COLOCAR{" "}
                         <span className="text-green font-bold">AQUI</span> e{" "}
                         <span className="text-green font-bold">AQUI TBM</span>{" "}
                     </span>
                 </h1>
 
-                <p className="text-d-grey text-sm md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                <p className="text-white text-sm md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
                     Construa o físico dos seus sonhos seguindo uma dieta básica e bem feita com acompanhamento de verdade.
                 </p>
                 <div className="flex justify-center lg:justify-start animate-in slide-in-from-bottom duration-700 delay-300 mt-6">
