@@ -18,13 +18,13 @@ export default function Navbar() {
 
                 {/* nav links */}
                 <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#sobre" className="text-preto hover:text-black/90 text-sm lg:text-lg">Sobre</a>
-                    <a href="#depoimentos" className="text-preto hover:text-black/90 text-sm lg:text-lg">Depoimentos</a>
-                    <a href="#planos" className="text-preto hover:text-black/90 text-sm lg:text-lg">Planos</a>
-                    <a href="#FAQ" className="text-preto hover:text-black/90 text-sm lg:text-lg">FAQ</a>
+                    <a href="#sobre" className="text-black hover:text-black/75 text-sm lg:text-lg">Sobre</a>
+                    <a href="#depoimentos" className="text-black hover:text-black/75 text-sm lg:text-lg">Depoimentos</a>
+                    <a href="#planos" className="text-black hover:text-black/75 text-sm lg:text-lg">Planos</a>
+                    <a href="#FAQ" className="text-black hover:text-black/75 text-sm lg:text-lg">FAQ</a>
                 </div>
 
-                <button className="md:hidden p-2 text-preto hover:text-black/90" onClick={() => setMobileMenuIsOpen((prev) => !prev)}>
+                <button className="md:hidden p-2 text-black hover:text-black/75" onClick={() => setMobileMenuIsOpen((prev) => !prev)}>
                     {mobileMenuIsOpen ? (<X className="w-5 h-5 sm:w-6 sm:h-6"/>
                     ) : (
                         <Menu className="w-5 h-5 sm:w-6 sm:h-6"/>
@@ -36,10 +36,10 @@ export default function Navbar() {
         {mobileMenuIsOpen && (
             <div className="md:hidden bg-silver backdrop-blur-lg border-y border-green animate-in slide-in-from-top duration-300">
                 <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
-                    <a href="#sobre" onClick={() => setMobileMenuIsOpen(false)} className="block text-preto hover:text-black/90 text-sm lg:text-base">Sobre</a>
-                    <a href="#depoimentos" onClick={() => setMobileMenuIsOpen(false)} className="block text-preto hover:text-black/90 text-sm lg:text-base">Depoimentos</a>
-                    <a href="#planos" onClick={() => setMobileMenuIsOpen(false)} className="block text-preto hover:text-black/90 text-sm lg:text-base">Planos</a>
-                    <a href="#FAQ" onClick={() => setMobileMenuIsOpen(false)} className="block text-preto hover:text-black/90 text-sm lg:text-base">FAQ</a>
+                    <a href="#sobre" onClick={() => setMobileMenuIsOpen(false)} className="block text-black hover:text-black/75 text-sm lg:text-base">Sobre</a>
+                    <a href="#depoimentos" onClick={() => setMobileMenuIsOpen(false)} className="block text-black hover:text-black/75 text-sm lg:text-base">Depoimentos</a>
+                    <a href="#planos" onClick={() => setMobileMenuIsOpen(false)} className="block text-black hover:text-black/75 text-sm lg:text-base">Planos</a>
+                    <a href="#FAQ" onClick={() => setMobileMenuIsOpen(false)} className="block text-black hover:text-black/75 text-sm lg:text-base">FAQ</a>
                 </div>
             </div>
         )}
