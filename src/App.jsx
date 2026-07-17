@@ -11,8 +11,7 @@ import Evoluir from "./components/Evoluir";
 
 function App() {
   return (
-  <div className="min-h-screen bg-gradient-to-b from-emerald-950 via-emerald-800 to-emerald-950 text-white overflow-hidden">
-
+  <div className="min-h-screen text-white overflow-hidden">
     <Navbar />
     <Hero />
     <Sobre />

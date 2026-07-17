@@ -1,4 +1,5 @@
 import { Check, Star } from "lucide-react";
+import Reveal from "./Reveal";
 
 const plans = [
     {
@@ -53,6 +54,7 @@ export default function Preco() {
     return ( 
         <section id="planos" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-green scroll-mt-20">
             <div className="max-w-7xl mx-auto">
+                <Reveal>
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                         <span className="text-white">Escolha como você quer </span>
@@ -110,6 +112,7 @@ export default function Preco() {
                         </div>
                     ))}
                 </div>
+                </Reveal>
             </div>
         </section>
     );

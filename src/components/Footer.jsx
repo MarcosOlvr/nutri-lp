@@ -28,8 +28,8 @@ export default function Footer() {
                         { icon: <FaInstagram />, label: "/nutridyego", href: "https://instagram.com/nutridyego"},
                         { icon: <FaEnvelope />, label: "dyegoaugustonutri@gmail.com"},
                     ].map((social, index) => (
-                        <div className="flex justify-center">
-                            <a href={social.href} key={index} target="_blank" rel="noopener noreferrer" className="flex items-center text-preto hover:text-black/80 transition-colors text-base border-b border-green">
+                        <div className="flex justify-center" key={index}>
+                            <a href={social.href} target="_blank" rel="noopener noreferrer" className="flex items-center text-preto hover:text-black/80 transition-colors text-base border-b border-green">
                                 <span className="w-8 h-8 flex items-center justify-center text-xl">
                                     {social.icon}
                                 </span>

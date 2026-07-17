@@ -1,9 +1,11 @@
 import { ArrowRight, BicepsFlexed, Dumbbell, OctagonX, AlarmClockOff, ListX, SlidersHorizontal, SquareChartGantt, TrendingUp, CalendarCog, HandHelping, FilePenLine } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function Sobre() {
     return ( 
     <section id="sobre" className="py-12 px-10 sm:px-6 lg:px-8 relative bg-silver scroll-mt-20">
         <div className="max-w-6xl mx-auto">
+        <Reveal>
             <div className="text-center mb-6 sm:mb-8 lg:mb-10">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 animate slide-in-from-bottom duration-700 delay-100">
                     <span className="text-preto">Meu acompanhamento</span>
@@ -37,6 +39,7 @@ export default function Sobre() {
                     </div>
                 </div>
             </div>
+        </Reveal>
         </div>
     </section>
     );

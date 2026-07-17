@@ -12,6 +12,16 @@ body {
 }
 
 @layer utilities {
+    .entrada {
+        opacity:0;
+        transform:translateX(-200px);
+        transition:.7s ease-out;
+    }
+    .entrada.show {
+        opacity:1;
+        transform:translateY(0);
+    }
+
     .animate-in {
         animation-fill-mode: both;
     }

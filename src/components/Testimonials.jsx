@@ -1,5 +1,6 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
+import Reveal from "./Reveal";
 
 export default function Depoimentos() {
   const testimonials = [
@@ -33,6 +34,7 @@ export default function Depoimentos() {
   return (
     <section id="depoimentos" className="py-20 relative bg-white scroll-mt-20">
       <div className="container mx-auto px-4">
+        <Reveal>
         <div className="text-center mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-preto">
             O que acontece quando você para de tentar sozinho
@@ -94,6 +96,7 @@ export default function Depoimentos() {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Reveal from "./Reveal";
 
 const faqs = [
   { question: "Funciona online mesmo?", answer: " Sim. Hoje, o acompanhamento online permite mais contato e ajustes do que o modelo tradicional." },
@@ -14,7 +15,7 @@ export default function FAQ() {
   return (
     <section id="FAQ" className="py-20 px-6 relative bg-silver scroll-mt-20">
       <div className="max-w-6xl mx-auto">
-
+      <Reveal>
         <h2 className="text-preto text-4xl font-bold mb-12 text-center sm:text-start">
           Perguntas frequentes
         </h2>
@@ -66,6 +67,7 @@ export default function FAQ() {
               </a>
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );

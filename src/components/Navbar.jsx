@@ -7,21 +7,21 @@ export default function Navbar() {
     return (
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-slate-950/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
+            <div className="flex justify-between items-center h-14 sm:h-16">
                 <div className="flex items-center space-x-1 group cursor-pointer">
                     <div className="p-2">
                         <a href="#">
-                            <img src="logos/logo01.png" alt="Dyego - Nutricionista Esportivo" className="w-45 md:w-60"/>
+                            <img src="logos/logo01.png" alt="Dyego - Nutricionista Esportivo" className="w-45"/>
                         </a>
                     </div>
                 </div>
 
                 {/* nav links */}
                 <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-                    <a href="#sobre" className="text-black hover:text-black/75 text-sm lg:text-lg">Sobre</a>
-                    <a href="#depoimentos" className="text-black hover:text-black/75 text-sm lg:text-lg">Depoimentos</a>
-                    <a href="#planos" className="text-black hover:text-black/75 text-sm lg:text-lg">Planos</a>
-                    <a href="#FAQ" className="text-black hover:text-black/75 text-sm lg:text-lg">FAQ</a>
+                    <a href="#sobre" className="text-black hover:text-black/75 text-sm lg:text-base">Sobre</a>
+                    <a href="#depoimentos" className="text-black hover:text-black/75 text-sm lg:text-base">Depoimentos</a>
+                    <a href="#planos" className="text-black hover:text-black/75 text-sm lg:text-base">Planos</a>
+                    <a href="#FAQ" className="text-black hover:text-black/75 text-sm lg:text-base">FAQ</a>
                 </div>
 
                 <button className="md:hidden p-2 text-black hover:text-black/75" onClick={() => setMobileMenuIsOpen((prev) => !prev)}>

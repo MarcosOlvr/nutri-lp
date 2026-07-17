@@ -1,9 +1,10 @@
 import { ArrowUp } from "lucide-react";
+import Reveal from "./Reveal";
 
 export default function Cta() {
     return (
         <section className="relative bg-green py-20 px-6 overflow-hidden">
-
+            <Reveal>
             {/* Decoração esquerda */}
             <div className="hidden xl:block absolute -left-16 top-1/2 -translate-y-1/2 w-64 h-64 rounded-full border-[40px] border-white opacity-80" />
             <div className="hidden xl:block absolute left-24 top-1/2 -translate-y-1/2 w-0 h-0 border-l-[60px] border-l-transparent border-r-[60px] border-r-transparent border-b-[100px] border-b-white opacity-60 rotate-12" />
@@ -35,7 +36,7 @@ export default function Cta() {
                     </a>
                 </div>
             </div>
-
+            </Reveal>
         </section>
     );
 }
