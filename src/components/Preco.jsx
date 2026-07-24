@@ -54,17 +54,19 @@ export default function Preco() {
     return ( 
         <section id="planos" className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative bg-green scroll-mt-20">
             <div className="max-w-7xl mx-auto">
-                <Reveal>
                 <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+                <Reveal>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                         <span className="text-white">Escolha como você quer </span>
                         <span className="text-white">EVOLUIR</span>
                     </h2>
                     <p className="text-white text-base sm:text-lg md:text-xl max-w-2xl mx-auto">Resultados consistentes vêm de acompanhamento e não de tentativa isolada.</p>
+                </Reveal>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6">
                     {plans.map((plan, key) => (
+                        <Reveal>
                         <div key={key} className={`relative bg-silver shadow-2xl backdrop-blur-sm border rounded-xl sm:rounded-2xl p-6 sm:p-8 transition-all duration-300 overflow-visible group flex flex-col h-full ${
                             plan.maisRecomendado 
                             ? "shadow-green-500/20 lg:scale-105 border-green hover:scale-106" 
@@ -110,9 +112,9 @@ export default function Preco() {
                                 </button>
                             </a>
                         </div>
+                        </Reveal>
                     ))}
                 </div>
-                </Reveal>
             </div>
         </section>
     );

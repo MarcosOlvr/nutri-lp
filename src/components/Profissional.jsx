@@ -16,7 +16,7 @@ export default function SobreMim() {
           <Reveal>
             <div className="block sm:flex justify-center lg:justify-start">
               <h2 className="text-4xl font-bold text-preto mb-5 sm:mb-0">Dyego Augusto</h2>
-              <div className="flex items-center justify-center space-x-2 px-2 py-2 sm:px-3 bg-silver border border-black rounded-full sm:ml-3">
+              <div className="flex items-center justify-center space-x-2 px-2 py-2 sm:px-3 bg-silver border border-black rounded-full sm:ml-3 mb-5">
                 <span className="text-xs sm:text-sm text-black font-bold">CRN6 49530</span>
               </div>
             </div>

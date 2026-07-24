@@ -16,7 +16,7 @@ export default function FAQ() {
     <section id="FAQ" className="py-20 px-6 relative bg-silver scroll-mt-20">
       <div className="max-w-6xl mx-auto">
       <Reveal>
-        <h2 className="text-preto text-4xl font-bold mb-12 text-center sm:text-start">
+        <h2 className="text-preto text-2xl md:text-4xl font-bold mb-12 text-center sm:text-start">
           Perguntas frequentes
         </h2>
 
